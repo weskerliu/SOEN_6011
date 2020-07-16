@@ -13,9 +13,7 @@ app.get("/", (req, res) => {
   res.send("Hello World");
 });
 
-const skillRoutes = require('./src/routes/skill.routes');
-
-app.use('/api/v1/skill', skillRoutes);
+app.use("/api/v1/skills", require("./src/routes/skill.routes"));
 
 // listen for requests
 app.listen(port, () => {
