@@ -12,6 +12,11 @@ app.use(bodyParser.json());
 app.get("/", (req, res) => {
   res.send("Hello World");
 });
+
+const skillRoutes = require('./src/routes/skill.routes');
+
+app.use('/api/v1/skill', skillRoutes);
+
 // listen for requests
 app.listen(port, () => {
   console.log(`Server is listening on port ${port}`);
