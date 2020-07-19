@@ -42,7 +42,7 @@ exports.create = function (req, res) {
 };
 
 exports.update = function(req,res) {
-  if(req.body.constructor === Object && Object.keys(req.body).length === 0){
+  if(!req.body){
     res.status(400).send({ error:true, message: 'Please provide all required field' });
   }else{
     Skill.update(req.params.id, new Skill(req.body),function(err,skill) {
