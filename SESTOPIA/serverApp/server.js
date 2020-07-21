@@ -16,6 +16,7 @@ app.get("/", (req, res) => {
 app.use("/api/v1/skills", require("./src/routes/skill.routes"));
 app.use("/api/v1/scenarios", require('./src/routes/scenario.routes'));
 app.use("/api/v1/tools", require('./src/routes/tool.routes'));
+app.use("/api/v1/references", require('./src/routes/reference.routes'));
 
 // listen for requests
 app.listen(port, () => {
