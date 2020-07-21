@@ -4,9 +4,14 @@ const dbConn = require("./../../config/db.config");
 
 let Skill = function (skill) {
   this.title = skill.title;
+  this.author = skill.author;
+  this.prerequisites = skill.prerequisites;
+  this.classification = skill.classification;
   this.rationaleForSkill = skill.rationaleForSkill;
-  this.rolesForSkill = skill.rolesForSkill;
-  this.selfAssessment_id = skill.selfAssessment_id;
+  this.work_relate = skill.work_relate;
+  this.roleofCultivatingSkill = skill.roleofCultivatingSkill;
+  this.selfAssessment_score = skill.selfAssessment_score;
+  this.reason = skill.reason;
 };
 
 Skill.create = function (newSkill, result) {
@@ -22,7 +27,7 @@ Skill.create = function (newSkill, result) {
 };
 
 Skill.findById = function (id, result) {
-  console.log(id)
+  console.log(id);
   dbConn.query("Select * from skill where id =?", id, function (err, res) {
     if (err) {
       console.log("error: ", err);
@@ -47,12 +52,17 @@ Skill.findAll = function (result) {
 
 Skill.update = function (id, skill, result) {
   dbConn.query(
-    "UPDATE skill SET title=?,rationaleForSkill=?,rolesForSkill=?,selfAssessment_id=? WHERE id =?",
+    "UPDATE skill SET title=?,author=?,prerequisites=?,classification=?, rationaleForSkill=?, work_relate=?, roleofCultivatingSkill=?, selfAssessment_score=?, reason=? WHERE id =?",
     [
       skill.title,
+      skill.author,
+      skill.prerequisites,
+      skill.classification,
       skill.rationaleForSkill,
-      skill.rolesForSkill,
-      skill.selfAssessment_id,
+      skill.work_relate,
+      skill.roleofCultivatingSkill,
+      skill.selfAssessment_score,
+      skill.reason,
       id,
     ],
     function (err, res) {
@@ -66,12 +76,12 @@ Skill.update = function (id, skill, result) {
   );
 };
 
-Skill.delete = function(id, result){
-  dbConn.query("DELETE FROM skill WHERE id =?", [id],function(err,res){
-    if(err){
+Skill.delete = function (id, result) {
+  dbConn.query("DELETE FROM skill WHERE id =?", [id], function (err, res) {
+    if (err) {
       console.log("error: ", err);
     } else {
-      result(null,res);
+      result(null, res);
     }
   });
 };
