@@ -6,7 +6,10 @@ https://templatemo.com/tm-553-xtra-blog
 
 */
 
-html { overflow-x: hidden; }
+html { 
+    overflow-x: hidden;
+    height:100%; 
+}
 
 body {
     margin: 0;
@@ -15,20 +18,17 @@ body {
     font-size: 19px;
     line-height: 2em;
     overflow-x: hidden;
+    height:100%;
 }
-
-.bg {
+.bg{
     /* The image used */
-    background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(20).jpg");
-  
-    /* Full height */
+    background-image: url("../img/janko-ferlic-sfL_QOnmy00-unsplash.jpg");
     height: 100%;
-  
-    /* Center and scale the image nicely */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
+
 
 p, span { color: #999; }
 hr { 
@@ -36,12 +36,12 @@ hr {
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.form-control::-webkit-input-placeholder { color: #999; }  
-.form-control:-ms-input-placeholder { color: #999; }  
-.form-control::placeholder { color: #999; }
+.form-control::-webkit-input-placeholder { background-color:rgba(0,0,0,0);}  
+.form-control:-ms-input-placeholder { background-color:rgba(0,0,0,0);}  
+.form-control::placeholder { background-color:rgba(0,0,0, 0);}
 
 .tm-header {
-    background-color: #0CC;
+    background-color:rgba(0,0,0,0.7);
     color: white;
     
     position: fixed;
@@ -68,8 +68,8 @@ hr {
 }
 
 .tm-site-header {
-    margin-top: 50px;
-    margin-bottom: 115px;
+    margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 .tm-site-logo {
@@ -89,11 +89,16 @@ hr {
     padding: 80px 100px 25px;
 }
 
+
 .tm-post { max-width: 470px; }
 
 .tm-row {
     max-width: 980px;
     justify-content: space-between;
+}
+
+.card{
+    background-color:rgba(180,132,132,0.4);
 }
 
 .tm-nav { margin-bottom: 100px; }
@@ -118,7 +123,7 @@ hr {
 .tm-nav-item:hover .tm-nav-link,
 .tm-nav-item.active .tm-nav-link
  {
-    color: #0CC;
+    color: rgb(180, 132, 132);
     background-color: white;
     text-decoration: none;
 }
@@ -148,27 +153,7 @@ ul {
 
 .tm-nav { margin-left: -30px; }
 
-.tm-social-link {
-    display: inline-block;
-    background-color: white;    
-    font-size: 1.4rem;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    padding-top: 8px; 
-    margin-right: 15px;   
-    margin-bottom: 15px;
-}
 
-.tm-social-icon { 
-    color: #0CC;    
-    transition: all 0.3s ease;
-}
-
-.tm-social-link:hover .tm-social-icon.fa-facebook { color: #3b5998; }
-.tm-social-link:hover .tm-social-icon.fa-twitter { color: #00acee; }
-.tm-social-link:hover .tm-social-icon.fa-instagram { color: #3f729b; }
-.tm-social-link:hover .tm-social-icon.fa-linkedin { color: #0e76a8; }
 .navbar-toggler { display: none; }
 
 .tm-search-form {
@@ -183,7 +168,7 @@ ul {
     width: 480px;
     margin-right: 30px;
     border-radius: 0;
-    border-color: #0CC;
+    border-color: rgba(180,132,132);
     font-size: 1.2rem;
 }
 
@@ -191,11 +176,11 @@ ul {
     width: 60px;
     height: 60px;
     border: none;
-    background-color: #0CC;
+    background-color: rgba(180,132,132,0.5);
     transition: all 0.3s ease;
 }
 
-.tm-search-button:hover { background-color: #09b6b6; }
+.tm-search-button:hover { background-color: rgba(180,132,132); }
 
 .tm-search-icon {
     color: white;
@@ -332,7 +317,7 @@ ul {
 .tm-copyright { text-align: right; }
 
 /* Single Post page */
-hr.tm-hr-primary { border-top: 5px solid #0CC; }
+hr.tm-hr-primary { border-top: 5px solid rgba(180,132,132); }
 
 video {
     width: 100%;
