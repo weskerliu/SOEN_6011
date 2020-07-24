@@ -2,6 +2,16 @@
 
 const Tool = require('./../models/tool.model');
 
+exports.findAll = function(req,res) {
+  Tool.findAll(function(err,tool){
+    if (err) {
+      res.send(err);
+    } else {
+      res.json(tool);
+    }
+  });
+};
+
 exports.create = function (req, res) {
   const new_tool = new Tool(req.body);
 
@@ -19,8 +29,7 @@ exports.create = function (req, res) {
 };
 
 exports.findById = function (req, res) {
-  console.log(req.params.id);
-  Tool.findById(req.params.id, function (err, tool) {
+  Tool.findById(req.body.id, function (err, tool) {
     console.log("function");
     if (err) {
       res.send(err);
@@ -34,11 +43,11 @@ exports.update = function(req,res) {
   if(!req.body){
     res.status(400).send({ error:true, message: 'Please provide all required field' });
   }else{
-    Skill.update(req.params.id, new Tool(req.body),function(err,tool) {
+    Tool.update(req.body.id, new Tool(req.body),function(err,tool) {
       if(err){
         res.send(err);
       }else{
-        res.json({ error: false, message: "skill updated!"});
+        res.json({ error: false, message: "tool updated!", data:tool});
       }
     });
   }
@@ -46,7 +55,7 @@ exports.update = function(req,res) {
 
 
 exports.delete = function(req,res) {
-  Tool.delete(req.params.id, function(err, tool) {
+  Tool.delete(req.body.id, function(err, tool) {
     if(err){
       res.send(err);
     } else {

@@ -4,13 +4,15 @@ const router = express.Router();
 
 const toolController = require('./../controllers/tool.controller');
 
-router.get('/:id', toolController.findById);
+router.get('/', toolController.findAll);
+
+router.get('/id/', toolController.findById);
 
 router.post('/', toolController.create);
 
-router.put('/:id', toolController.update);
+router.put('/', toolController.update);
 
-router.delete('/:id', toolController.delete);
+router.delete('/', toolController.delete);
 
 
 module.exports = router;

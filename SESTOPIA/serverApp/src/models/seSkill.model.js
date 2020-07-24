@@ -2,16 +2,13 @@
 
 const dbConn = require("./../../config/db.config");
 
-let SkillTool = function (skillTool) {
-  this.skill_id = skillTool.skill_id;
-  this.tool_id = skillTool.tool_id;
+let SeSkill = function (seSkill) {
+  this.skill_id = seSkill.skill_id;
+  this.se_id = seSkill.se_id;
 };
 
-SkillTool.create = function (newSkillTool, result) {
-  dbConn.query("INSERT INTO skilltool set ?", newSkillTool, function (
-    err,
-    res
-  ) {
+SeSkill.create = function (newSeSkill, result) {
+  dbConn.query("INSERT INTO seskill set ?", newSeSkill, function (err, res) {
     if (err) {
       console.log("error: ", err);
       result(err, null);
@@ -22,8 +19,8 @@ SkillTool.create = function (newSkillTool, result) {
   });
 };
 
-SkillTool.findBySkill_id = function (id, result) {
-  dbConn.query("SELECT * FROM skilltool WHERE skill_id=?", [id], function (
+SeSkill.findBySkill_id = function (id, result) {
+  dbConn.query("SELECT * FROM seskill WHERE skill_id=?", [id], function (
     err,
     res
   ) {
@@ -36,8 +33,8 @@ SkillTool.findBySkill_id = function (id, result) {
   });
 };
 
-SkillTool.findByTool_id = function (id, result) {
-  dbConn.query("SELECT * FROM skilltool WHERE tool_id=?", [id], function (
+SeSkill.findBySE_id = function (id, result) {
+  dbConn.query("SELECT * FROM seskill WHERE se_id=?", [id], function (
     err,
     res
   ) {
@@ -50,10 +47,10 @@ SkillTool.findByTool_id = function (id, result) {
   });
 };
 
-SkillTool.update = function (id, skillTool, result) {
+SeSkill.update = function (id, SeSkill, result) {
   dbConn.query(
-    "UPDATE skilltool SET skill_id=?, tool_id=? WHERE id=?",
-    [skillTool.skill_id, skillTool.tool_id, id],
+    "UPDATE seskill SET skill_id=?, sel_id=? WHERE id=?",
+    [SeSkill.skill_id, SeSkill.se_id, id],
     function (err, res) {
       if (err) {
         console.log("error: ", err);
@@ -65,8 +62,8 @@ SkillTool.update = function (id, skillTool, result) {
   );
 };
 
-SkillTool.delete = function(id, result){
-  dbConn.query("DELETE FROM skilltool WHERE id=?", [id], function(err,res){
+SeSkill.delete = function (id, result) {
+  dbConn.query("DELETE FROM seskill WHERE id=?", [id], function (err, res) {
     if (err) {
       console.log("error: ", err);
     } else {
@@ -75,5 +72,4 @@ SkillTool.delete = function(id, result){
   });
 };
 
-
-module.exports = SkillTool;
+module.exports = SeSkill;

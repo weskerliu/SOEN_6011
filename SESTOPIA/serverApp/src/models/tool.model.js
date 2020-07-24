@@ -7,6 +7,17 @@ let Tool = function (tool) {
   this.descrption = tool.descrption;
 };
 
+Tool.findAll = function(result){
+  dbConn.query("SELECT * FROM tools", function(err,res){
+    if (err) {
+      console.log("error: ", err);
+      result(err, null);
+    } else {
+      result(null, res);
+    }
+  });
+};
+
 Tool.create = function (newTool, result) {
   dbConn.query("INSERT INTO tools set ?", newTool, function (err, res) {
     if (err) {
@@ -32,7 +43,7 @@ Tool.findById = function (id, result) {
 
 Tool.update = function (id, tool, result) {
   dbConn.query(
-    "UPDATE tools SET name=?, descrption=?",
+    "UPDATE tools SET name=?, descrption=? WHERE id=?",
     [tool.name, tool.descrption, id],
     function (err, res) {
       if(err){
