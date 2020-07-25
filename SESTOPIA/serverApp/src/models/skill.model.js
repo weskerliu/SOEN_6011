@@ -14,13 +14,30 @@ let Skill = function (skill) {
   this.reason = skill.reason;
 };
 
-Skill.create = function (newSkill, result) {
+let SkillTool = function (skillTool) {
+  this.skill_id = skillTool.skill_id;
+  this.tool_id = skillTool.tool_id;
+};
+
+Skill.create = function (newSkill,tool_id, result) {
   dbConn.query("INSERT INTO skill set ?", newSkill, function (err, res) {
     if (err) {
       console.log("error: ", err);
       result(err, null);
     } else {
-      console.log(res.insertId);
+      let Skill_id = res.insertId;
+      let value = tool_id.map((id)=>{
+        let newSkillTool = SkillTool(skillTool.Skill_id = Skill_id,skillTool.tool_id =id);
+        value.push(newSkillTool);
+      });
+      dbConn.query("INSERT INTO skilltool set skill_id=?, tool_id=? VALUES ?",value,function(err,res){
+        if (err) {
+          console.log("error: ", err);
+          result(err, null);
+        } else {
+          console.log(res.insertId);
+        }
+      });
       result(null, res.insertId);
     }
   });
