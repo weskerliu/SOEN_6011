@@ -22,7 +22,7 @@ body {
 }
 .bg{
     /* The image used */
-    background-image: url("../img/homepg.jpg");
+    background-image: url("../img/janko-ferlic-sfL_QOnmy00-unsplash.jpg");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -100,7 +100,7 @@ hr {
 }
 
 .card{
-    background-color:rgba(180,132,132,0.7);
+    background-color:rgba(180,132,132,0.8);
 }
 
 .tm-nav { margin-bottom: 100px; }
@@ -124,6 +124,7 @@ hr {
 
 .dropdown-menu{
     background-color:white;
+    width:280px;
 }
 
 .dropdown-item{
@@ -131,7 +132,7 @@ hr {
 }
 
 .dropdown-item:hover{
-    color: rgb(180, 132, 132);
+    color: whitesmoke;
     background-color: rgba(0,0,0,0.7);
     text-decoration: none;
 }
@@ -175,39 +176,42 @@ ul {
 .tm-search-form {
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
-.form-inline .form-control.tm-search-input {
-    display: block;
+.form-control{
+    display: inline-block;
     height: 40px;
-    width: 480px;
-    /* margin-right: 30px; */
-    border-radius: 10px;
+    width:480px;
+    border-left: none;
+    border-radius: 25px;
     border-color: transparent;
-    border-top-right-radius: 0;
-    border-bottom-right-radius: 0;
-    font-size: 1.5rem;
-    font-weight: 800;
-    background-color:  rgba(180,132,132,0.5);
-}
-
-.tm-search-button {
-    width: 60px;
-    height: 40px;
-    /* border: none; */
-    border-color: transparent;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    background-color: rgba(180,132,132,0.5);
+    background-color:rgba(180,132,132,0.3);
     transition: all 0.3s ease;
+    font-size: 1.1rem;
 }
 
-.tm-search-button:hover { background-color: rgba(180,132,132); }
+.form-control:focus{
+    color:white;
+    background-color: rgba(180,132,132,0.5);
+    border:rgba(180,132,132,0.5) !important;
+
+}
+
+.input-group-text{
+    height: 39px;
+    background-color: rgba(180,132,132,0.3);
+    border-color:transparent;
+    border-right: none;
+    border-top-left-radius:25px ;
+    border-bottom-left-radius:25px ;
+
+}
+.tm-search-icon:hover { color: rgba(180,132,132); }
 
 .tm-search-icon {
     color: white;
-    /* font-size: 1.3rem; */
+    font-size: 1.1rem;
 }
 
 .tm-post-link {
@@ -360,11 +364,11 @@ video {
 
 .tm-comment-reply { padding-left: 37px; }
 
-.form-control {
+/* .form-control {
     height: 45px;
-    border-color: #0CC;
+    border-color: transparent;
     border-radius: 0;
-}
+} */
 
 .tm-comment-form { max-width: 360px; }
 .tm-category-list { list-style-type: none; }
@@ -487,6 +491,7 @@ a:hover figcaption { color: #056767; }
         width: 320px;
         left: -320px;        
         transition: all 0.3s ease;
+        background-color: black;
     }
 
     .tm-header.show { left: 0; }
