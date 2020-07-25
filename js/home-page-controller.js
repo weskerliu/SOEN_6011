@@ -17,5 +17,10 @@ function runScript(e) {
 }
 
 function search(){
-    console.log("testing...")
+
+    var searchText = document.getElementById("searchInput").value;
+    console.log("searching for ..."+searchText);
+    location.href = "search-page-1.html";
+
+
 }
