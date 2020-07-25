@@ -6,7 +6,8 @@ import { CSVLink } from "react-csv"
 
 class Admin extends Component {
   state = {
-    items: []
+    items: [],
+    skill: []
   }
 
   getItems(){
