@@ -82,7 +82,7 @@ hr {
     justify-content: center;
 }
 
-.tm-site-logo i { color: #0CC; }
+.tm-site-logo i { color:black; }
 
 .tm-main {
     margin-left: 400px;
@@ -118,6 +118,20 @@ hr {
     align-items: center;
     font-size: 1.4rem;
     padding: 30px;
+}
+
+.dropdown-menu{
+    background-color:white;
+}
+
+.dropdown-item{
+    color: rgb(180, 132, 132);
+}
+
+.dropdown-item:hover{
+    color: rgb(180, 132, 132);
+    background-color: rgba(0,0,0,0.7);
+    text-decoration: none;
 }
 
 .tm-nav-item:hover .tm-nav-link,
