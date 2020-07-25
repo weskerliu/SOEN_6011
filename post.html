@@ -26,13 +26,20 @@ https://templatemo.com/tm-553-xtra-blog
                 <div class="mb-3 mx-auto tm-site-logo"><i class="fas fa-times fa-2x"></i></div>            
                 <h1 class="text-center">SESTOPIA</h1>
             </div>
-            <nav class="tm-nav " id="tm-nav">            
+            <div class="input-group md-form form-sm form-1 pl-0">
+                <div class="input-group-prepend border-right-0">
+                  <span class="input-group-text border-right-0" id="basic-text1"><i class="fas fa-search text-white "
+                      aria-hidden="true"></i></span>
+                </div>
+                <input class="form-control my-0 py-1 border-left-0 shadow-none" type="text" placeholder="Search..." aria-label="Search">
+            </div>
+            <nav class="tm-nav tm-pt-45" id="tm-nav">            
                 <ul>
-                    <li class="tm-nav-item active"><a href="index.html" class="tm-nav-link">
+                    <li class="tm-nav-item"><a href="index.html" class="tm-nav-link">
                         <i class="fas fa-home"></i>
                         Home
                     </a></li>
-                    <li class="tm-nav-item dropdown">
+                    <li class="tm-nav-item active dropup">
                         <a class="tm-nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="fas fa-pen"></i>
                             Skills
@@ -40,6 +47,11 @@ https://templatemo.com/tm-553-xtra-blog
                         <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                           <a class="dropdown-item" href="#">Action</a>
                           <a class="dropdown-item" href="#">Another action</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
+                          <a class="dropdown-item" href="#">Something else here</a>
                           <a class="dropdown-item" href="#">Something else here</a>
                         </div>
                       </li>
@@ -49,35 +61,19 @@ https://templatemo.com/tm-553-xtra-blog
                     </a></li>
                 </ul>
             </nav>
-            <p class="tm-mb-20 pr-5 text-white">
-                SESTOPIA is an information-intensive Web Application.
-                <div>Developed by Group G</div>
+            <p class="tm-mb-20 pr-5 text-white" style="text-align: center">
+                SESTOPIA
+                <br>
+                Developed by Group G
             </p>
         </div>
     </header>
 	<div class="container-fluid">
         <main class="tm-main">
-            <!-- Search form -->
-            <div class="row tm-row">
-                <div class="col-12">
-                    <form method="GET" class="form-inline tm-mb-80 tm-search-form">                
-                        <input class="form-control tm-search-input" name="query" type="text" placeholder="Search..." aria-label="Search">
-                        <button class="tm-search-button" type="submit">
-                            <i class="fas fa-search tm-search-icon" aria-hidden="true"></i>
-                        </button>                                
-                    </form>
-                </div>                
-            </div>            
-            <div class="row tm-row tm-mb-45">
-                <div class="col-12">
-				<h2 class="tm-color-primary tm-post-title">Reverse Engineering</h2>
-                    <hr class="tm-hr-primary tm-mb-55">
-                    <img src="img/reveng.jpg" alt="Image" class="img-fluid">
-                </div>
-            </div>
             <div class="row tm-row tm-mb-40">
                 <div class="col-12">                    
                     <div class="mb-4">
+                        <hr class="tm-hr-primary"/>
                         <h2 class="pt-2 tm-color-primary tm-post-title">Introduction</h2>
 						<p class="tm-mb-40">Knowledge Area: Software Maintenance</p>
                         <p>
@@ -272,5 +268,7 @@ https://templatemo.com/tm-553-xtra-blog
     </div>
     <script src="js/jquery.min.js"></script>
     <script src="js/templatemo-script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
 </body>
 </html>
