@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/home-page-controller.js"></script>
     <title>SESTOPIA</title>
     <link rel="stylesheet" href="fontawesome/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
@@ -28,7 +29,7 @@
                   <span class="input-group-text border-right-0" id="basic-text1"><i class="fas fa-search text-white "
                       aria-hidden="true"></i></span>
                 </div>
-                <input class="form-control my-0 py-1 border-left-0 shadow-none" type="text" placeholder="Search..." aria-label="Search">
+                <input id="searchInput" onkeypress="runScript(event)" class="form-control my-0 py-1 border-left-0 shadow-none" type="text" placeholder="Search..." aria-label="Search">
             </div>
             <nav class="tm-nav tm-pt-45" id="tm-nav">            
                 <ul>
