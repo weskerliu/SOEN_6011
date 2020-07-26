@@ -22,7 +22,7 @@ body {
 }
 .bg{
     /* The image used */
-    background-image: url("../img/janko-ferlic-sfL_QOnmy00-unsplash.jpg");
+    background-image: url("../img/homepg.jpg");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -100,7 +100,7 @@ hr {
 }
 
 .card{
-    background-color:rgba(180,132,132,0.8);
+    background-color:rgba(0,0,0,0.8);
 }
 
 .tm-nav { margin-bottom: 100px; }
@@ -272,7 +272,7 @@ ul {
     color: #999;
 }
 
-.tm-post-link:hover .tm-post-title { color: rgba(0,0,0); }
+.tm-post-link:hover .tm-post-title { color: rgb(87, 84, 84); }
 
 .tm-btn {
     display: inline-block;
