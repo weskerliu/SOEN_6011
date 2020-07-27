@@ -11,11 +11,6 @@ html {
     height:100%; 
 }
 
-.img-fluid{
-    height: 244px;
-    width: 488px;
-}
-
 body {
     margin: 0;
     padding: 0;
@@ -389,24 +384,7 @@ figcaption { line-height: 1.4; }
 }
 
 .tm-pt-20 { padding-top: 20px; }
-.tm-pt-30 { 
-    padding-top: 5px;
-    padding-bottom: 0px; 
-}
-
-.tm-quotes{
-    padding: 0px 5px 0px 5px;
-    text-align: justify;
-    text-justify: inter-word; 
-    font-style: italic;  
-}
-
-.tm-quotes-author{
-    padding: 0px 5px 0px 5px;
-    text-align: center;
-    text-justify: inter-word;   
-    font-style: italic;
-}
+.tm-pt-30 { padding-top: 30px; }
 .tm-pt-45 { padding-top: 45px; }
 .tm-pt-60 { padding-top: 60px; }
 .tm-mb-40 { margin-bottom: 40px; }
