@@ -14,71 +14,18 @@
 </head>
 
 <body class="bg">
-
-    <header class="tm-header" id="tm-header">
-        <div class="tm-header-wrapper">
-            <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="tm-site-header">
-                <div class="mb-3 mx-auto tm-site-logo"><i class="fas fa-times fa-2x"></i></div>            
-                <h1 class="text-center">SESTOPIA</h1>
-            </div>
-            <div class="input-group md-form form-sm form-1 pl-0">
-                <div class="input-group-prepend border-right-0">
-                  <span class="input-group-text border-right-0" id="basic-text1"><i class="fas fa-search text-white "
-                      aria-hidden="true"></i></span>
-                </div>
-                <input id="searchInput" onkeypress="runScript(event)" class="form-control my-0 py-1 border-left-0 shadow-none" type="text" placeholder="Search..." aria-label="Search">
-            </div>
-            <nav class="tm-nav tm-pt-45" id="tm-nav">            
-                <ul>
-                    <li class="tm-nav-item active"><a href="index.html" class="tm-nav-link">
-                        <i class="fas fa-home"></i>
-                        Home
-                    </a></li>
-                    <li class="tm-nav-item dropup">
-                        <a class="tm-nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fas fa-pen"></i>
-                            Skills
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                          <a class="dropdown-item" href="#">Skill 1</a>
-                          <a class="dropdown-item" href="#">Skill 2</a>
-                          <a class="dropdown-item" href="#">Skill 3</a>
-                          <a class="dropdown-item" href="#">Skill 4</a>
-                          <a class="dropdown-item" href="#">Skill 5</a>
-                          <a class="dropdown-item" href="#">Skill 6</a>
-                          <a class="dropdown-item" href="#">Skill 7</a>
-                          <a class="dropdown-item" href="#">Skill 8</a>
-                        </div>
-                      </li>
-                    <li class="tm-nav-item"><a href="about.html" class="tm-nav-link">
-                        <i class="fas fa-users"></i>
-                        About Us
-                    </a></li>
-                </ul>
-            </nav>
-            <p class="tm-mb-20 pr-5 text-white" style="text-align: center">
-                SESTOPIA
-                <br>
-                Developed by Group G
-            </p>
-        </div>
-    </header>
+    <div id="sidepanel"></div>
     <div class="container-fluid">
         <main class="tm-main">
             <div class="row tm-row">
                 <article class="col-12 col-md-6 tm-post">
                     <div class="card wow fadeInRight">
                         <hr class="tm-hr-primary">
-                        <a href="leadership.html" class="effect-lily tm-post-link tm-pt-20">
+                        <a href="post.html" class="effect-lily tm-post-link tm-pt-20">
                             <div class="tm-post-link-inner">
-                                <img src="img/leadership.jpg" alt="Image" class="img-fluid">
+                                <img src="img/img-01.jpg" alt="Image" class="img-fluid">
                             </div>
-                            <h2 class="tm-pt-30 tm-color-primary tm-post-title">LEADERSHIP</h2>
-                            <h6 class="tm-quotes">"A leader is best when people barely know he exists. When his work is done, his aim fulfilled, they will say: we did it ourselves."</h6>
-                            <h6 class="tm-quotes-author">-Lao Tzu</h6>
+                            <h2 class="tm-pt-30 tm-color-primary tm-post-title">Leadership</h2>
                         </a>
                         <!-- <p class="tm-pt-30">
                             There is a clickable image with beautiful hover effect and active title link for each post
@@ -100,9 +47,7 @@
                             <div class="tm-post-link-inner">
                                 <img src="img/img-01.jpg" alt="Image" class="img-fluid">
                             </div>
-                            <h2 class="tm-pt-30 tm-color-primary tm-post-title">SKILL NAME</h2>
-                            <h6 class="tm-quotes">"Enter quote here. Enter quote here. Enter quote here. Enter quote here. Enter quote here. Enter quote here. Enter quote. "</h6>
-                            <h6 class="tm-quotes-author">-Enter quote author</h6>
+                            <h2 class="tm-pt-30 tm-color-primary tm-post-title">Requirement Analysis</h2>
                         </a>
                         <!-- <p class="tm-pt-30">
                             There is a clickable image with beautiful hover effect and active title link for each post
@@ -124,9 +69,7 @@
                             <div class="tm-post-link-inner">
                                 <img src="img/img-01.jpg" alt="Image" class="img-fluid">
                             </div>
-                            <h2 class="tm-pt-30 tm-color-primary tm-post-title">SKILL NAME</h2>
-                            <h6 class="tm-quotes">"Enter quote here. Enter quote here. Enter quote here. Enter quote here. Enter quote here. Enter quote here. Enter quote. "</h6>
-                            <h6 class="tm-quotes-author">-Enter quote author</h6>
+                            <h2 class="tm-pt-30 tm-color-primary tm-post-title">Data Modeling</h2>
                         </a>
                         <!-- <p class="tm-pt-30">
                             There is a clickable image with beautiful hover effect and active title link for each post
@@ -148,33 +91,7 @@
                             <div class="tm-post-link-inner">
                                 <img src="img/img-01.jpg" alt="Image" class="img-fluid">
                             </div>
-                            <h2 class="tm-pt-30 tm-color-primary tm-post-title">SKILL NAME</h2>
-                            <h6 class="tm-quotes">"Enter quote here. Enter quote here. Enter quote here. Enter quote here. Enter quote here. Enter quote here. Enter quote. "</h6>
-                            <h6 class="tm-quotes-author">-Enter quote author</h6>
-                        </a>
-                        <!-- <p class="tm-pt-30">
-                            There is a clickable image with beautiful hover effect and active title link for each post
-                            item.
-                            Left side is a sticky menu bar. Right side is a blog content that will scroll up and down.
-                        </p>
-                        <hr>
-                        <div class="d-flex justify-content-between">
-                            <span>Author</span>
-                            <span>- Pranal</span>
-                        </div> -->
-                        <hr class="tm-hr-primary">
-                    </div>
-                </article>
-                <article class="col-12 col-md-6 tm-post">
-                    <div class="card wow fadeInRight">
-                        <hr class="tm-hr-primary">
-                        <a href="testing.html" class="effect-lily tm-post-link tm-pt-20">
-                            <div class="tm-post-link-inner">
-                                <img src="img/img-01.jpg" alt="Image" class="img-fluid">
-                            </div>
-                            <h2 class="tm-pt-30 tm-color-primary tm-post-title">Software Testing</h2>
-                            <h6 class="tm-quotes">"Enter quote here. Enter quote here. Enter quote here. Enter quote here. Enter quote here. Enter quote here. Enter quote. "</h6>
-                            <h6 class="tm-quotes-author">-Enter quote author</h6>
+                            <h2 class="tm-pt-30 tm-color-primary tm-post-title">Software Implmentation</h2>
                         </a>
                         <!-- <p class="tm-pt-30">
                             There is a clickable image with beautiful hover effect and active title link for each post
@@ -196,9 +113,29 @@
                             <div class="tm-post-link-inner">
                                 <img src="img/img-01.jpg" alt="Image" class="img-fluid">
                             </div>
-                            <h2 class="tm-pt-30 tm-color-primary tm-post-title">SKILL NAME</h2>
-                            <h6 class="tm-quotes">"Enter quote here. Enter quote here. Enter quote here. Enter quote here. Enter quote here. Enter quote here. Enter quote. "</h6>
-                            <h6 class="tm-quotes-author">-Enter quote author</h6>
+                            <h2 class="tm-pt-30 tm-color-primary tm-post-title">Automated Unit Testing</h2>
+                        </a>
+                        <!-- <p class="tm-pt-30">
+                            There is a clickable image with beautiful hover effect and active title link for each post
+                            item.
+                            Left side is a sticky menu bar. Right side is a blog content that will scroll up and down.
+                        </p>
+                        <hr>
+                        <div class="d-flex justify-content-between">
+                            <span>Author</span>
+                            <span>- Pranal</span>
+                        </div> -->
+                        <hr class="tm-hr-primary">
+                    </div>
+                </article>
+                <article class="col-12 col-md-6 tm-post">
+                    <div class="card wow fadeInRight">
+                        <hr class="tm-hr-primary">
+                        <a href="reverse-engineering.html" class="effect-lily tm-post-link tm-pt-20">
+                            <div class="tm-post-link-inner">
+                                <img src="img/reveng4.jpg" alt="Image" class="img-fluid">
+                            </div>
+                            <h2 class="tm-pt-30 tm-color-primary tm-post-title">Reverse Engineering</h2>
                         </a>
                         <!-- <p class="tm-pt-30">
                             There is a clickable image with beautiful hover effect and active title link for each post
@@ -220,9 +157,7 @@
                             <div class="tm-post-link-inner">
                                 <img src="img/img-01.jpg" alt="Image" class="img-fluid">
                             </div>
-                            <h2 class="tm-pt-30 tm-color-primary tm-post-title">SKILL NAME</h2>
-                            <h6 class="tm-quotes">"Enter quote here. Enter quote here. Enter quote here. Enter quote here. Enter quote here. Enter quote here. Enter quote. "</h6>
-                            <h6 class="tm-quotes-author">-Enter quote author</h6>
+                            <h2 class="tm-pt-30 tm-color-primary tm-post-title">Documentation</h2>
                         </a>
                         <!-- <p class="tm-pt-30">
                             There is a clickable image with beautiful hover effect and active title link for each post
@@ -247,8 +182,6 @@
                                 <img src="img/img-01.jpg" alt="Image" class="img-fluid">
                             </div>
                             <h2 class="tm-pt-30 tm-color-primary tm-post-title">Version Control Management</h2>
-                            <h6 class="tm-quotes">"Enter quote here. Enter quote here. Enter quote here. Enter quote here. Enter quote here. Enter quote here. Enter quote. "</h6>
-                            <h6 class="tm-quotes-author">-Enter quote author</h6>
                         </a>
                         <!-- <p class="tm-pt-30">
                             There is a clickable image with beautiful hover effect and active title link for each post
@@ -278,6 +211,11 @@
     <script src="js/templatemo-script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <script> 
+    $(function(){
+        $("#sidepanel").load("panel.html"); 
+    });
+    </script>
 </body>
 
 </html>
