@@ -1,12 +1,12 @@
 import React, { Component } from "react";
-import { Container, Row, Col } from "reactstrap";
+import { Container, Row, Col, Button } from "reactstrap";
 import ModalForm from "./../Components/Modals/Modal";
 import DataTable from "./../Components/Tables/DataTable";
 
 class Admin extends Component {
   state = {
     items: [],
-    skills: []
+    skills: [],
   };
 
   getItems() {
@@ -14,12 +14,13 @@ class Admin extends Component {
       .then((response) => response.json())
       .then((items) => this.setState({ items }))
       .catch((err) => console.log(err));
+      console.log("items", this.state.items);
   }
 
   getSkills() {
     fetch("http://localhost:6011/api/v1/skills")
       .then((response) => response.json())
-      .then((skills) => this.setState({skills}))
+      .then((skills) => this.setState({ skills }))
       .catch((err) => console.log(err));
   }
 
@@ -50,6 +51,7 @@ class Admin extends Component {
   componentDidMount() {
     this.getItems();
     this.getSkills();
+    console.log("tools", this.state.items);
   }
 
   render() {
@@ -80,6 +82,13 @@ class Admin extends Component {
         <Row>
           <Col>
             <h1 style={{ margin: "20px 0" }}>SKills</h1>
+          </Col>
+        </Row>
+        <Row>
+          <Col>
+            <a href="/CreateSkill">
+              <Button color="success">add SKill</Button>
+            </a>
           </Col>
         </Row>
       </Container>

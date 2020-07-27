@@ -4,6 +4,7 @@ const router = express.Router();
 
 const seareaController = require('./../controllers/searea.controller');
 
+router.get('/', seareaController.findAll);
 
 router.get('/:id',seareaController.findById);
 

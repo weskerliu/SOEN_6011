@@ -19,18 +19,20 @@ let SkillTool = function (skillTool) {
   this.tool_id = skillTool.tool_id;
 };
 
-Skill.create = function (newSkill,tool_id, result) {
-  dbConn.query("INSERT INTO skill set ?", newSkill, function (err, res) {
+Skill.create = function (newSkill,tool_id,roles_id,se_id, result) {
+  dbConn.query("INSERT INTO skill SET ?", newSkill, function (err, res) {
     if (err) {
       console.log("error: ", err);
       result(err, null);
     } else {
-      let Skill_id = res.insertId;
-      let value = tool_id.map((id)=>{
-        let newSkillTool = SkillTool(skillTool.Skill_id = Skill_id,skillTool.tool_id =id);
-        value.push(newSkillTool);
-      });
-      dbConn.query("INSERT INTO skilltool set skill_id=?, tool_id=? VALUES ?",value,function(err,res){
+      let value = [];
+      const skill_id = res.insertId;
+      for(const index in tool_id){
+        let skillTool = [skill_id, tool_id[index]];
+        value.push(skillTool);
+      }
+      console.log(value);
+      dbConn.query("INSERT INTO skilltool (skill_id, tool_id) VALUES?",[value],function(err,res){
         if (err) {
           console.log("error: ", err);
           result(err, null);
@@ -38,6 +40,33 @@ Skill.create = function (newSkill,tool_id, result) {
           console.log(res.insertId);
         }
       });
+
+      value = [];
+      console.log("value ", value);
+      console.log("roles_id: ",roles_id);
+      for(const index in roles_id){
+        let skillRole = [skill_id, roles_id[index]]
+        value.push(skillRole);
+      }
+      console.log("after value ", value);
+      dbConn.query("INSERT INTO rolesforskill (skill_id, roles_id) VALUES?", [value], function(err,res){
+        if (err) {
+          console.log("error: ", err);
+          result(err, null);
+        } else {
+          console.log(res.insertId);
+        }
+      });
+      console.log("se_id: ", se_id)
+      dbConn.query("INSERT INTO seskill SET skill_id=?, se_id=?", [skill_id,se_id], function(err,res){
+        if (err) {
+          console.log("error: ", err);
+          result(err, null);
+        } else {
+          console.log(res.insertId);
+        }
+      });
+
       result(null, res.insertId);
     }
   });

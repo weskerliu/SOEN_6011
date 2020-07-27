@@ -25,6 +25,7 @@ app.use("/api/v1/references", require('./src/routes/reference.routes'));
 app.use("/api/v1/skillTools", require('./src/routes/skillTool.routes'));
 app.use("/api/v1/seareas", require('./src/routes/searea.routes'));
 app.use("api/v1/seSkills", require('./src/routes/seSkill.routes'));
+app.use("/api/v1/roles", require('./src/routes/role.routes'));
 
 app.use(function (req, res, next) {
 

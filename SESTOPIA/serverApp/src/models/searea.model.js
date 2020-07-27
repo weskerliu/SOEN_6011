@@ -18,6 +18,17 @@ Searea.create = function (newSe, result) {
   });
 };
 
+Searea.findAll = function(result){
+  dbConn.query("SELECT * FROM searea", function(err,res){
+    if (err) {
+      console.log("error: ", err);
+      result(err, null);
+    } else {
+      result(null, res);
+    }
+  });
+};
+
 Searea.findById = function (id, result) {
   dbConn.query("SELECT * FROM searea WHERE id=?", [id], function (err, res) {
     if (err) {

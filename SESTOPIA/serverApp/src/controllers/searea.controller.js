@@ -18,6 +18,18 @@ exports.create = function(req,res){
   }
 };
 
+exports.findAll = function (req, res) {
+  Searea.findAll(function (err, searea) {
+    console.log("controller");
+    if (err) {
+      res.send(err);
+    } else {
+      console.log("res", searea);
+      res.send(searea);
+    }
+  });
+};
+
 exports.findById = function (req, res) {
   console.log(req.params.id);
   Skill.findById(req.params.id, function (err, skiseareall) {
