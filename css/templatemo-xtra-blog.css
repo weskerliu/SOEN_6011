@@ -11,6 +11,15 @@ html {
     height:100%; 
 }
 
+.img-fluid{
+    height: 244px;
+    width: 488px;
+}
+
+img.leadership-img-header{
+    border-radius: 15px;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -41,6 +50,30 @@ hr {
 .form-control::-webkit-input-placeholder { background-color:rgba(0,0,0,0); color:white}  
 .form-control:-ms-input-placeholder { background-color:rgba(0,0,0,0); color:white}  
 .form-control::placeholder { background-color:rgba(0,0,0, 0);}
+
+.leadership-bg{
+    background-color:rgba(0,0,0,0.4);
+}
+
+.leadership-box{
+    border-radius: 25px;
+    position: relative;
+    display: inline-block; /* Make the width of box same as image */
+}
+.leadership-box .leadership-text{
+    border-radius: 15px;
+    position: absolute;
+    z-index: 999;
+    margin: 0 auto;
+    left: 0;
+    right: 0;        
+    text-align: center;
+    top: 81.5%; /* Adjust this value to move the positioned div up and down */
+    background: rgba(0, 0, 0, 0.8);
+    font-family: Arial,sans-serif;
+    color: #fff;
+    width: 70%; /* Set the width of the positioned div */
+}
 
 .tm-header {
     background-color:rgba(0,0,0,0.7);
@@ -384,7 +417,24 @@ figcaption { line-height: 1.4; }
 }
 
 .tm-pt-20 { padding-top: 20px; }
-.tm-pt-30 { padding-top: 30px; }
+.tm-pt-30 { 
+    padding-top: 5px;
+    padding-bottom: 0px; 
+}
+
+.tm-quotes{
+    padding: 0px 5px 0px 5px;
+    text-align: justify;
+    text-justify: inter-word; 
+    font-style: italic;  
+}
+
+.tm-quotes-author{
+    padding: 0px 5px 0px 5px;
+    text-align: center;
+    text-justify: inter-word;   
+    font-style: italic;
+}
 .tm-pt-45 { padding-top: 45px; }
 .tm-pt-60 { padding-top: 60px; }
 .tm-mb-40 { margin-bottom: 40px; }
