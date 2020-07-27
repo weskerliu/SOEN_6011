@@ -3,78 +3,27 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Xtra Blog</title>
+	<title>SESTOPIA</title>
 	<link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
 	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/ -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/templatemo-xtra-blog.css" rel="stylesheet">
-<!--
-    
-TemplateMo 553 Xtra Blog
-
-https://templatemo.com/tm-553-xtra-blog
-
--->
 </head>
-<body class="post-bg">
-	<header class="tm-header" id="tm-header">
-        <div class="tm-header-wrapper">
-            <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
-                <i class="fas fa-bars"></i>
-            </button>
-            <div class="tm-site-header">
-                <div class="mb-3 mx-auto tm-site-logo"><i class="fas fa-times fa-2x"></i></div>            
-                <h1 class="text-center">SESTOPIA</h1>
-            </div>
-            <div class="input-group md-form form-sm form-1 pl-0">
-                <div class="input-group-prepend border-right-0">
-                  <span class="input-group-text border-right-0" id="basic-text1"><i class="fas fa-search text-white "
-                      aria-hidden="true"></i></span>
-                </div>
-                <input class="form-control my-0 py-1 border-left-0 shadow-none" type="text" placeholder="Search..." aria-label="Search">
-            </div>
-            <nav class="tm-nav tm-pt-45" id="tm-nav">            
-                <ul>
-                    <li class="tm-nav-item"><a href="index.html" class="tm-nav-link">
-                        <i class="fas fa-home"></i>
-                        Home
-                    </a></li>
-                    <li class="tm-nav-item active dropup">
-                        <a class="tm-nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fas fa-pen"></i>
-                            Skills
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="#">Skill 1</a>
-                            <a class="dropdown-item" href="#">Skill 2</a>
-                            <a class="dropdown-item" href="#">Skill 3</a>
-                            <a class="dropdown-item" href="debugging.html">Debugging</a>
-                            <a class="dropdown-item" href="#">Skill 5</a>
-                            <a class="dropdown-item" href="#">Skill 6</a>
-                            <a class="dropdown-item" href="#">Skill 7</a>
-                            <a class="dropdown-item" href="#">Skill 8</a>  
-                        </div>
-                      </li>
-                    <li class="tm-nav-item"><a href="about.html" class="tm-nav-link">
-                        <i class="fas fa-users"></i>
-                        About Us
-                    </a></li>
-                </ul>
-            </nav>
-            <p class="tm-mb-20 pr-5 text-white" style="text-align: center">
-                SESTOPIA
-                <br>
-                Developed by Group G
-            </p>
-        </div>
-    </header>
+<body class="post-bg">	
+	<div id="sidepanel"></div>
 	<div class="container-fluid">
         <main class="tm-main">
+            <div class="row tm-row tm-mb-45">
+                <div class="col-12">                    
+                    <h2 class="tm-color-primary tm-post-title">Debugging</h2>
+                    <hr class="tm-hr-primary">
+                    <!-- <img src="img/reveng.jpg" alt="Image" class="img-fluid"> -->
+                </div>
+            </div>
             <div class="row tm-row tm-mb-40">
                 <div class="col-12">                    
                     <div class="mb-4">
-                        <hr class="tm-hr-primary"/>
-                        <h2 class="pt-2 tm-color-primary tm-post-title">DEBUGGING</h2>
+                        <h2 class="pt-2 tm-color-primary tm-post-title">Introduction</h2>
 						<p class="tm-mb-40">Knowledge Area: Computing Foundations</p>
                         <p>
                             Software development efforts result in the delivery of a software product that satisfies user
@@ -256,19 +205,23 @@ https://templatemo.com/tm-553-xtra-blog
                     </div>                    
                 </aside>
             </div>
-            <footer class="row tm-row">
-                <div class="col-md-6 col-12 tm-color-gray">
-                    Design: <a rel="nofollow" target="_parent" href="https://templatemo.com" class="tm-external-link">TemplateMo</a>
-                </div>
-                <div class="col-md-6 col-12 tm-color-gray tm-copyright">
-                    Copyright 2020 Xtra Blog Company Co. Ltd.
-                </div>
-            </footer>
+        <div id="footer"></div>    
         </main>
     </div>
-    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.min.js"></script>	
     <script src="js/templatemo-script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+	<script> 
+    $(function(){
+      $("#sidepanel").load("panel.html"); 
+    });
+    </script>
+    
+    <script> 
+        $(function(){
+            $("#footer").load("footer.html"); 
+        });
+        </script>
 </body>
 </html>
