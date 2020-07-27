@@ -38,7 +38,7 @@ body {
     background-size: cover;
   }
 .post-bg{
-    background-color: rgba(180,132,132,0.5);
+    background-color:rgb(204, 202, 202);
 }
 
 p, span { color: whitesmoke; }
@@ -449,8 +449,10 @@ figcaption { line-height: 1.4; }
 .tm-mt-100 { margin-top: 100px; }
 .tm-mr-20 { margin-right: 20px; }
 .tm-color-primary, span.tm-color-primary { color:white; }
+.sp-color-primary, span.sp-color-primary { color:black; }
 a.tm-color-gray, .tm-color-gray { color:black; }
 a.tm-color-gray:hover { color: #099; }
+sp-color-gray{color:yellowgreen}
 .tm-bg-gray { background-color: #F3F4F5; }
 button:focus { outline: none; }
 a:hover { 
