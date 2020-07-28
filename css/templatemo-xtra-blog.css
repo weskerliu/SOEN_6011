@@ -29,11 +29,11 @@ body {
     overflow-x: hidden;
     height:100%;
     /* transition */
-    opacity: 0;
+    /* opacity: 0;
     transition: opacity 5s;
-    -webkit-transition: opacity 2s; /* Safari */
+    -webkit-transition: opacity 2s; Safari */
 }
-}
+
 .bg{
    background-color:whitesmoke;
     /* height: 100%;
