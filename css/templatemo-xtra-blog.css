@@ -11,11 +11,6 @@ html {
     height:100%; 
 }
 
-.img-fluid{
-    height: 244px;
-    width: 488px;
-}
-
 img.leadership-img-header{
     border-radius: 15px;
 }
@@ -42,10 +37,10 @@ body {
     background-size: cover; */
   }
 .post-bg{
-    background-color:rgb(204, 202, 202);
+    background-color:white;
 }
 
-p, span { color: whitesmoke; }
+p, span { color: rgba(135, 132, 138, 1) }
 hr { 
     border-top-color: #CCC; 
     margin-top: 10px;
@@ -137,7 +132,7 @@ hr {
 }
 
 .card{
-    background-color:rgb(163,209, 236,0.8);
+    background-color:rgb(204, 227, 247, 1);
     opacity: 0.9;
     /* box-shadow: 3px 6px ; */
 }
@@ -262,7 +257,7 @@ ul {
 
 .tm-post-link-inner {
     overflow: hidden;
-    background:rgb(163,209, 236,0.8);
+    background:rgb(204, 227, 227, 1);
 }
 
 .tm-post-link img {
@@ -307,6 +302,11 @@ ul {
     transition: all 0.3s ease;
 }
 
+.sp-post-title {
+    font-size: 1.7rem;
+    text-align: left;
+    transition: all 0.3s ease;
+}
 .tm-h3 {
     font-size: 1.3rem;
     color: #999;
@@ -433,7 +433,8 @@ figcaption { line-height: 1.4; }
     padding: 0px 5px 0px 5px;
     text-align: justify;
     text-justify: inter-word; 
-    font-style: italic;  
+    font-style: italic;
+    color: black;  
 }
 
 .tm-quotes-author{
@@ -441,6 +442,8 @@ figcaption { line-height: 1.4; }
     text-align: center;
     text-justify: inter-word;   
     font-style: italic;
+    font-weight: bold;
+    color: black;
 }
 .tm-pt-45 { padding-top: 45px; }
 .tm-pt-60 { padding-top: 60px; }
@@ -455,16 +458,16 @@ figcaption { line-height: 1.4; }
 .tm-mt-40 { margin-top: 40px; }
 .tm-mt-100 { margin-top: 100px; }
 .tm-mr-20 { margin-right: 20px; }
-.tm-color-primary, span.tm-color-primary { color:white; }
-.sp-color-primary, span.sp-color-primary { color:black; }
+.tm-color-primary, span.tm-color-primary { color:black }
 a.tm-color-gray, .tm-color-gray { color:black; }
 a.tm-color-gray:hover { color: #099; }
-sp-color-gray{color:yellowgreen}
 .tm-bg-gray { background-color: #F3F4F5; }
+.sp-bg-gray { background-color:rgb(204, 227, 247, 1); }
 button:focus { outline: none; }
 a:hover { 
     text-decoration: none; 
-    color: #048c8c;
+    /* color: #048c8c; */
+    color: rgba(35, 61, 105, 1);
 }
 
 a:hover figcaption { color: #056767; }
@@ -488,7 +491,7 @@ a:hover figcaption { color: #056767; }
 .tm-social-links li a {
     display: block;
     color: white;
-    background-color: #0CC;
+    background-color: rgba(35, 61, 105, 1);
     width: 45px;
     height: 45px;    
     margin-right: 15px;    
@@ -510,6 +513,7 @@ a:hover figcaption { color: #056767; }
 
 .tm-contact-form label { font-size: 1.4rem; }
 .tm-contact-form .form-group { display: flex; }
+
 
 @media (max-width: 1540px) {
     .tm-header { width: 320px; }
