@@ -139,6 +139,26 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
 }
 
+.nav-menu .search-input input{
+  display: block;
+  position: relative;
+  color: #555555;
+  padding: 8px;
+  transition: 0.3s;
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+  border-bottom-color: #555555;
+  border-left: transparent;
+  border-top: transparent;
+  border-right: transparent;
+  border-bottom-width: thin;
+}
+
+.nav-menu .search-input input:focus{
+  outline:none !important;
+}
+
+
 .nav-menu .get-started a {
   background: #3498db;
   color: #fff;
@@ -303,6 +323,29 @@ h1, h2, h3, h4, h5, h6 {
   background: #57aae1;
   color: #fff;
 }
+
+.mobile-nav .search-input {
+  /* text-align: center; */
+  margin-top: 10px;
+}
+
+.mobile-nav .search-input input {
+  margin: 0 15px;
+  /* padding: 10px 30px; */
+  display: inline-block;
+  border-bottom-width: thin;
+  border-bottom-color: #555555;
+  border-top: transparent;
+  border-left: transparent;
+  border-right: transparent;
+}
+
+.mobile-nav .search-input input:focus{
+  outline:none !important;
+}
+
+
+
 
 .mobile-nav .drop-down > a:after {
   content: "\ea99";
