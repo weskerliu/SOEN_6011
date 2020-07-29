@@ -1,227 +1,641 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>SESTOPIA</title>
-	<link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
-	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/ -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/templatemo-xtra-blog.css" rel="stylesheet">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>SESTOPIA</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/logo.png" rel="icon">
+  <!-- <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Vesperr - v2.1.0
+  * Template URL: https://bootstrapmade.com/vesperr-free-bootstrap-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
 </head>
-<body class="post-bg">	
-	<div id="sidepanel"></div>
-	<div class="container-fluid">
-        <main class="tm-main">
-            <div class="row tm-row tm-mb-45">
-                <div class="col-12">                    
-                    <h2 class="tm-color-primary sp-post-title">Reverse Engineering</h2>
-                    <hr class="tm-hr-primary">
-                    <img src="img/reveng.jpg" alt="Image" class="img-fluid" style="width: 100%;">
-                </div>
-            </div>
-            <div class="row tm-row tm-mb-40">
-                <div class="col-12">                    
-                    <div class="mb-4">
-                        <h2 class="pt-2 tm-color-primary sp-post-title">Introduction</h2>
-						<p class="tm-mb-40">Knowledge Area: Software Maintenance</p>
-                        <p>
-                            Software development efforts result in the delivery of a software product that satisfies user
-							requirements. Accordingly, the software product
-							must change or evolve. Once in operation, defects
-							are uncovered, operating environments change,
-							and new user requirements surface. The maintenance phase of the life cycle begins following a
-							warranty period or postimplementation support
-							delivery, but maintenance activities occur much
-							earlier. 
-                        </p>
-                        <p>
-                            Software maintenance is an integral part of a
-							software life cycle. However, it has not received
-							the same degree of attention that the other phases
-							have. Historically, software development has had
-							a much higher profile than software maintenance
-							in most organizations. This is now changing, as
-							organizations strive to squeeze the most out of
-							their software development investment by keeping software operating as long as possible. The
-							open source paradigm has brought further attention to the issue of maintaining software artifacts
-							developed by others. 
-                        </p>                            
-                    </div>                    
-                </div>
-            </div>
-            <div class="row tm-row tm-mb-120">
-                <div class="col-lg-4 tm-about-col">
-                    <div class="sp-bg-gray tm-about-pad sp">
-                        <div class="text-center tm-mt-40 tm-mb-60">
-                         <i class="fas fa-bezier-curve fa-4x tm-color-primary"></i>                         
-                        </div>                        
-                        <h2 class="mb-3 tm-color-primary sp-post-title">Roles</h2>
-                        <p class="mb-0 tm-line-height-short">
-                            Phasellus pulvinar nisl ornare leo porttitor, et vestibulum lorem semper. 
-                            Duis risus ex, molestie sit amet magna in,
-                            pharetra pellentesque est. Curabitur elit metus.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-4 tm-about-col">
-                    <div class="sp-bg-gray tm-about-pad">
-                        <div class="text-center tm-mt-40 tm-mb-60">
-                            <i class="fas fa-users-cog fa-4x tm-color-primary"></i>                            
-                        </div>                        
-                        <h2 class="mb-3 tm-color-primary sp-post-title">Activities</h2>
-                        <p class="mb-0 tm-line-height-short">
-                            Suspendisse ullamcorper, mi vel molestie ornare, arcu magna euismod ipsum, in malesuada nulla magna ut enim. 
-                            Morbi lacinia magna sed auctor, vitae nunc cursus.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-4 tm-about-col tm-color-gray">
-                    <div class="sp-bg-gray tm-about-pad" >
-                        <div class="text-center tm-mt-40 tm-mb-60">
-                            <i class="fab fa-creative-commons-sampling fa-4x tm-color-primary"></i>                            
-                        </div>                        
-                        <h2 class="mb-3 tm-color-primary sp-post-title">Example</h2>
-                        <p class="mb-0 tm-line-height-short">
-                            Nunc mi ante, suscipit vel dapibus et, volutpat sit amet ante. In tempor nec sem vitae varius. Aliquam tincidunt orci sem, et imperdiet massa consectetur nec.
-                        </p>
-                    </div>
-                </div>
-            </div>            
-            <div class="row tm-row tm-mb-60">
-                <div class="col-12">
-					<h2 class="tm-color-primary sp-post-title">Tools/Artifacts</h2>
-                    <hr class="tm-hr-primary  tm-mb-55">
-                </div>                
-                <div class="col-lg-6 tm-mb-60 tm-person-col">
-                    <div class="media tm-person">
-                        <img src="img/about-02.jpg" alt="Image" class="img-fluid mr-4">
-                        <div class="media-body">
-                            <h2 class="tm-color-primary sp-post-title mb-2">John Henry</h2>
-                            <h3 class="tm-h3 mb-3">CEO/Founder</h3>
-                            <p class="mb-0 tm-line-height-short">
-                                Aliquam non vulputate lectus, vel ultricies diam. Suspendisse at ipsum
-                                hendrerit, vestibulum mi id, mattis tortor.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-               <div class="col-lg-6 tm-mb-60 tm-person-col">
-                    <div class="media tm-person">
-                        <img src="img/about-03.jpg" alt="Image" class="img-fluid mr-4">
-                        <div class="media-body">
-                            <h2 class="tm-color-primary sp-post-title mb-2">Timy Cake</h2>
-                            <h3 class="tm-h3 mb-3">Project Director</h3>
-                            <p class="mb-0 tm-line-height-short">
-                                Quisque in bibendum elit, in egestas turpis. Vestibulum ornare sollicitudin congue. 
-                                Aliquam lorem mi, maximus at iaculis ut.
-                            </p>
-                        </div>
-                    </div>
-				</div>         
-            </div>            
-       <!-- </main>
+
+<body>
+
+   <!-- ======= Header ======= -->
+ <header id="header" class="fixed-top d-flex align-items-center">
+  <div class="container d-flex align-items-center">
+
+    <div class="logo mr-auto">
+      <h1 class="text-light"><a href="index.html"><span>Sestopia</span></a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
     </div>
-    <div class="container-fluid">
-        <main class="tm-main">-->
-		<div class="row tm-row">
-                <div class="col-12">
-                    <!-- Video player 1422x800 -->
-                    <video width="954" height="535" controls class="tm-mb-40">
-                        <source src="video/wheat-field.mp4" type="video/mp4">							  
-                        Your browser does not support the video tag.
-                    </video>
-                </div>
-            </div>
-            <div class="row tm-row">
-                <div class="col-lg-8 tm-post-col">
-                    <div class="tm-post-full">                    
-                        
-                        
-                        <!-- Comments -->
-                        <div>
-                            <h2 class="tm-color-primary sp-post-title">Interviews</h2>
-                            <hr class="tm-hr-primary tm-mb-45">
-                            <div class="tm-comment tm-mb-45">
-                                <figure class="tm-comment-figure">
-                                    <img src="img/comment-1.jpg" alt="Image" class="mb-2 rounded-circle img-thumbnail">
-                                    <figcaption class="tm-color-primary text-center">Mark Sonny</figcaption>
-                                </figure>
-                                <div>
-                                    <p>
-                                        Praesent aliquam ex vel lectus ornare tritique. Nunc et eros
-                                        quis enim feugiat tincidunt et vitae dui. Nullam consectetur
-                                        justo ac ex laoreet rhoncus. Nunc id leo pretium, faucibus 
-                                        sapien vel, euismod turpis.
-                                    </p>
-                                    <div class="d-flex justify-content-between">
-                                        <a href="#" class="tm-color-primary">REPLY</a>
-                                        <span class="tm-color-primary">June 14, 2020</span>
-                                    </div>                                                 
-                                </div>                                
-                            </div>
-                            <div class="tm-comment-reply tm-mb-45">
-                                <hr>
-                                <div class="tm-comment">
-                                    <figure class="tm-comment-figure">
-                                        <img src="img/comment-2.jpg" alt="Image" class="mb-2 rounded-circle img-thumbnail">
-                                        <figcaption class="tm-color-primary text-center">Jewel Soft</figcaption>    
-                                    </figure>
-                                    <p>
-                                        Nunc et eros quis enim feugiat tincidunt et vitae dui.
-                                        Nullam consectetur justo ac ex laoreet rhoncus. Nunc
-                                        id leo pretium, faucibus sapien vel, euismod turpis.
-                                    </p>
-                                </div>                                
-                                <span class="d-block text-right tm-color-primary">June 21, 2020</span>
-                            </div>                                                    
-                        </div>
-                    </div>
-                </div>
-                <aside class="col-lg-4 tm-aside-col">
-                    <div class="tm-post-sidebar">
-					 <!--<h2 class="mb-4 sp-post-title tm-color-primary">Categories</h2>
-                        <hr class="mb-3 tm-hr-primary">                       
-                        <ul class="tm-mb-75 pl-5 tm-category-list">
-                            <li><a href="#" class="tm-color-primary">Visual Designs</a></li>
-                            <li><a href="#" class="tm-color-primary">Travel Events</a></li>
-                            <li><a href="#" class="tm-color-primary">Web Development</a></li>
-                        </ul> -->
-						
-                        <h2 class="tm-mb-40 sp-post-title tm-color-primary">Related Posts</h2>
-                       <!-- <hr class="mb-3 tm-hr-primary">-->
-                        <a href="#" class="d-block tm-mb-40">
-                            <figure>
-                                <img src="img/img-02.jpg" alt="Image" class="mb-3 img-fluid">
-                                <figcaption class="tm-color-primary">Duis mollis diam nec ex viverra scelerisque a sit</figcaption>
-                            </figure>
-                        </a>
-                        <a href="#" class="d-block tm-mb-40">
-                            <figure>
-                                <img src="img/img-05.jpg" alt="Image" class="mb-3 img-fluid">
-                                <figcaption class="tm-color-primary">Integer quis lectus eget justo ullamcorper ullamcorper</figcaption>
-                            </figure>
-                        </a>
-                    </div>                    
-                </aside>
-            </div>
-        <div id="footer"></div>    
-        </main>
+
+    <nav class="nav-menu d-none d-lg-block">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li class="drop-down active"><a href="">Skills</a>
+          <ul>
+            <li><a href="leadership.html">Skill 1 - Leadership</a></li>
+            <li><a href="requirement-analysis.html">Skill 2 - Requirement Analysis</a></li>
+            <li><a href="data-modeling.html">Skill 3 - Data Modeling</a></li>
+            <li><a href="cost-management.html">Skill 4 - Cost Management</a></li>
+            <li><a href="unit-testing.html">Skill 5 - Automated Unit Testing </a></li>
+            <li><a href="reverse-engineering.html">Skill 6 - Reverse Engineering</a></li>
+            <li><a href="debugging.html">Skill 7 - Debugging</a></li>
+            <li><a href="version-control.html">Skill 8 - Version Control Management</a></li>
+          </ul>
+        </li>
+        <li class="get-started"><a href="search-page.html">Add Search Bar</a></li>
+      </ul>
+    </nav><!-- .nav-menu -->
+
+  </div>
+</header><!-- End Header -->
+
+<main id="main">
+
+  <!-- ======= Breadcrumbs ======= -->
+  <section id="skillname" class="breadcrumbs">
+    <div class="container">
+
+      <div class="d-flex justify-content-between align-items-center">
+        <h2>Reverse Engineering</h2>        
+      </div>
     </div>
-    <script src="js/jquery.min.js"></script>	
-    <script src="js/templatemo-script.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
-	<script> 
-    $(function(){
-      $("#sidepanel").load("panel.html"); 
-    });
-    </script>
+  </section><!-- End Breadcrumbs -->
+
+  <!-- ======= Skill Info Section ======= -->
+  <section id="skilldetails" class="portfolio-details">
+    <div class="container">
+
+      <div class="row">
+
+        <div class="col-lg-8">
+          <div class="owl-carousel portfolio-details-carousel">
+            <img src="assets/img/reveng1.jpg" class="img-fluid" alt="">
+          </div>
+        </div>
+
+        <div class="col-lg-4 portfolio-info">
+          <!-- <h3>Skills Information</h3> -->
+          <ul>
+            <li><strong>Skill Classification</strong>: Software Maintenance</li>
+            <li><strong>Related Software Engineering Area(s) </strong>: Software Testing</li>
+          </ul>
+
+          <p>
+          Description of your Skill,,, For the image on left try to have a picture with good resolution------->>>>Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+          </p>
+        </div>
+
+        <div class="col-lg-12 portfolio-info">
+          <p>If more content ---->>>>>>Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.</p>
+        </div>
+
+      </div>
+
+    </div>
+  </section><!-- End Skill Info Section -->
+
+</main><!-- End #main -->
+
+  <main id="main">    
+
+     <!-- ======= Contents Section ======= -->
+     <section id="features" class="features">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Contents</h2>
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="300">
+          <div class="col-lg-3 col-md-4">
+            <div class="icon-box">              
+              <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
+              <h3><a href="#skillname" class="scrollto">Name of Skill</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+            <div class="icon-box">
+              <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
+              <h3><a href="#skilldetails" class="scrollto">Skill Classification</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+            <div class="icon-box">              
+              <i class="ri-disc-line" style="color: #b20969;"></i>
+              <h3><a href="#prereq" class="scrollto">Prerequisites</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+            <div class="icon-box">
+              <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
+              <h3><a href="#skilldetails" class ="scrollto">Related Software Engineering Area(s)</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <i class="ri-database-2-line" style="color: #47aeff;"></i>
+              <h3><a href="#rationale" class="scrollto">Rationale</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
+              <h3><a href="#roles" class="scrollto">Roles</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
+              <h3><a href="#activities" class="scrollto">Activities and Artifacts</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <i class="ri-price-tag-2-line" style="color: #4233ff;"></i>
+              <h3><a href="#example" class="scrollto">Real-World Example/Scenario</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <i class="ri-anchor-line" style="color: #b2904f;"></i>
+              <h3><a href="#academia" class="scrollto">Role of Academia or Industry</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">              
+              <i class="ri-store-line" style="color: #ffbb2c;"></i>
+              <h3><a href="#tools" class="scrollto">Tools</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <i class="ri-base-station-line" style="color: #ff5828;"></i>
+              <h3><a href="#assessment" class="scrollto">Skill Self-Assessment</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <i class="ri-fingerprint-line" style="color: #29cc61;"></i>
+              <h3><a href="#references" class="scrollto">References</a></h3>
+              
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Contents Section -->
+
+    <!-- ======= Prerequisites Section ======= -->
+    <section id="prereq" class="about">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Prerequisites</h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+            <!-- <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua.
+            </p> -->
+            <ul>
+              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+              <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
+              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <p>
+              Optional Content else cooment this div ---->>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+              culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <!-- <a href="#" class="btn-learn-more">Learn More</a> -->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Prerequisites Section -->
     
-    <script> 
-        $(function(){
-            $("#footer").load("footer.html"); 
-        });
-        </script>
+    <!-- ======= Rationale Section ======= -->
+    <section id="rationale" class="faq">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Rationale</h2>
+        </div>
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-5">
+            <i class="ri-question-line"></i>
+            <h4>Add/Remove div based on our data?</h4>
+          </div>
+          <div class="col-lg-7">
+            <p>
+              Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+            </p>
+          </div>
+        </div><!-- End Item-->
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-5">
+            <i class="ri-question-line"></i>
+            <h4>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h4>
+          </div>
+          <div class="col-lg-7">
+            <p>
+              Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.
+            </p>
+          </div>
+        </div><!-- End Item-->
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="500">
+          <div class="col-lg-5">
+            <i class="ri-question-line"></i>
+            <h4>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</h4>
+          </div>
+          <div class="col-lg-7">
+            <p>
+              Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+            </p>
+          </div>
+        </div><!-- End  Item-->
+
+      </div>
+    </section><!-- End Rationale Section -->
+
+     <!-- ======= Roles Section ======= -->
+     <section id="roles" class="testimonials section-bg">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Roles</h2>
+          <p>Optional,,,, Add/Remove div based on your data</p>
+        </div>
+
+        <div class="owl-carousel testimonials-carousel"  data-aos="fade-up" data-aos-delay="200" >
+
+          <div class="testimonial-wrap">
+            <div class="testimonial-item">
+              <h3>Eg.Developer</h3>
+              <!-- <h4>Ceo &amp; Founder</h4> -->
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+               Brief Description
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+            </div>
+          <!-- </div>
+
+          <div class="testimonial-wrap"> -->
+            <div class="testimonial-item">
+              <h3>Eg.Analyst</h3>
+              <!-- <h4>Designer</h4> -->
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid  cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+            </div>
+          </div>
+
+          <div class="testimonial-wrap">
+            <div class="testimonial-item">
+              <h3>Eg.Elicitator</h3>
+              <!-- <h4>Store Owner</h4> -->
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+            </div>
+          <!-- </div>
+
+          <div class="testimonial-wrap"> -->
+            <div class="testimonial-item">
+              <h3>Eg.Specialist</h3>
+              <!-- <h4>Freelancer</h4> -->
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Roles Section -->  
+
+    <!-- =======  Activities and Artifacts Section ======= -->
+    <section id="activities" class="faq">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2> Activities and Artifacts</h2>
+        </div>
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-5">
+            <i class="ri-question-line"></i>
+            <h4>Add/Remove Div based on your data?</h4>
+          </div>
+          <div class="col-lg-7">
+            <p>
+              Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+            </p>
+          </div>
+        </div><!-- End Item-->
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+          <div class="col-lg-5">
+            <i class="ri-question-line"></i>
+            <h4>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h4>
+          </div>
+          <div class="col-lg-7">
+            <p>
+              Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.
+            </p>
+          </div>
+        </div><!-- End Item-->
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="500">
+          <div class="col-lg-5">
+            <i class="ri-question-line"></i>
+            <h4>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</h4>
+          </div>
+          <div class="col-lg-7">
+            <p>
+              Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+            </p>
+          </div>
+        </div><!-- End  Item-->
+
+      </div>
+    </section><!-- End  Activities and Artifacts Section -->
+
+    <!-- ======= Real-World Example/Scenario Section ======= -->
+    <section id="example" class="services">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Real-World Example/Scenario</h2>
+          <p>Optional Content,,,, Can Add links to any youtube videos, articles etc.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+              <div class="icon"><i class="bx bxl-dribbble"></i></div>
+              <h4 class="title"><a href="">Example-1</a></h4>
+              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi 
+                Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
+                Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
+                Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4 class="title"><a href="">Example-2</a></h4>
+              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
+              <div class="icon"><i class="bx bx-tachometer"></i></div>
+              <h4 class="title"><a href="">Example-3</a></h4>
+              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
+            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
+              <div class="icon"><i class="bx bx-world"></i></div>
+              <h4 class="title"><a href="">Example-4</a></h4>
+              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Real-World Example/Scenario Section -->   
+
+  <!-- ======= Role of Academia/Industry Section ======= -->
+  <section id="academia" class="about">
+    <div class="container">
+
+      <div class="section-title" data-aos="fade-up">
+        <h2>Role of Academia/Industry</h2>
+      </div>
+
+      <div class="row content">
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+          <p>
+            Content ---->>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+        <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
+          <p>
+            Continued Content ---->>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+          <!-- <a href="#" class="btn-learn-more">Learn More</a> -->
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End Role of Academia/Industry Section --> 
+
+    <!-- ======= Tool Details Section ======= -->
+    <br>
+    <section id="tools" class="counts">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Tools</h2>
+        </div>
+
+        <div class="row">
+          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-xl-start" data-aos="fade-right" data-aos-delay="150">
+            <img src="assets/img/tools.jpg" alt="" class="img-fluid">
+          </div>
+
+          <div class="col-xl-7 d-flex align-items-stretch pt-4 pt-xl-0" data-aos="fade-left" data-aos-delay="300">
+            <div class="content d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="icofont-document-folder"></i>
+                    <span>Tool Name 1</span>
+                    <p><strong>Put Logos above for all tools...Keep the image on the left as it is</strong> Name & description here. Add/Remove div based on your data</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="icofont-document-folder"></i>
+                    <span>Tool Name 2</span>
+                    <p><strong>Projects</strong> adipisci atque cum quia aspernatur totam laudantium et quia dere tan
+                      adipisci atque cum quia aspernatur totam laudantium et quia dere tan
+                      adipisci atque cum quia aspernatur totam laudantium et quia dere tan
+                      adipisci atque cum quia aspernatur totam laudantium et quia dere tan</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="icofont-document-folder"></i>
+                    <span>Tool Name 3</span>
+                    <p><strong>Years of experience</strong> aut commodi quaerat modi aliquam nam ducimus aut voluptate non vel</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6 d-md-flex align-items-md-stretch">
+                  <div class="count-box">
+                    <i class="icofont-document-folder"></i>
+                    <span>Tool Name 4</span>
+                    <p><strong>Awards</strong> rerum asperiores dolor alias quo reprehenderit eum et nemo pad der</p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Tool Details Section -->
+
+    <!-- ======= Skill Assessment Section ======= -->
+    <section id="assessment" class="testimonials section-bg">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Skill Assessment</h2>
+        </div>
+
+        <!-- <div class="owl-carousel testimonials-carousel" data-aos="fade-up" data-aos-delay="200"> -->
+
+          <div class="testimonial-wrap">
+            <div class="testimonial-item">
+              <img src="assets/img/person.png" class="testimonial-img" alt="">
+              <h3>Score/10</h3>
+              <h4>Star Rating</h4>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+            </div>
+          </div>         
+        
+        <!-- </div> -->
+
+      </div>
+    </section>
+    <!-- End Skill Assessment Section -->  
+
+  <!-- ======= References Section ======= -->
+  <section id="references" class="portfolio-details">
+    <div class="container">
+
+      <div class="section-title" data-aos="fade-up">
+        <h2>References</h2>
+      </div>
+
+      <div class="row content">
+        <div class="col-lg-12" data-aos="fade-up" data-aos-delay="150">       
+        <ul>          
+          <li></i><a href="#">www.example.com</a></li>
+          <li></i><a href="#">www.example.com</a></li>
+          <li></i><a href="#">www.example.com</a></li>
+          <li></i><a href="#">www.example.com</a></li>
+        </ul>
+      </div>
+     </div>
+
+    </div>
+  </section>
+  <!-- End References Section --> 
+
+  </main><!-- End #main -->  
+
+  <!-- ======= Add Footer File======= -->
+  <!-- <div id="footer"></div>  -->
+  
+   
+  <footer id="footer">
+    <div class="container">
+      <div class="row d-flex align-items-center">
+        <div class="col-lg-6 text-lg-left text-center">
+          <div class="copyright">
+            &copy; Copyright <strong>Sestopia</strong>.For Educational Purposes only
+          </div>
+          <div class="credits">
+            <!-- All the links in the footer should remain intact. -->
+            <!-- You can delete the links only if you purchased the pro version. -->
+            <!-- Licensing information: https://bootstrapmade.com/license/ -->
+            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/vesperr-free-bootstrap-template/ -->
+            Concordia University <a href="#">SOEN 6011 (SUMMER 2020)</a>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <nav class="footer-links text-lg-right text-center pt-2 pt-lg-0">
+            <a href="index.html">Home</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+<!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
