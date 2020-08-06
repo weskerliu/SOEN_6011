@@ -5,6 +5,7 @@ import Admin from "./Pages/Admin";
 import CreateSkill from "./Pages/CreateSkill"
 
 class App extends Component {
+  //for the admin
   render() {
     return (
       <main>
