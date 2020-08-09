@@ -27,7 +27,7 @@ exports.findById = function (req, res) {
 
 exports.create = function (req, res) {
   const new_skill = new Skill(req.body);
-  console.log("roles_id: ",req.body.roles_id);
+
   if(!req.body){
     res.status(400).send({ error:true, message: 'Please provide all required field' });
   }else{
