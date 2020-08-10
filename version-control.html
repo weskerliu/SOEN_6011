@@ -76,7 +76,7 @@
 									Control Management</a></li>
 						</ul></li>
 					<li class="search-input"><input type="text"
-						placeholder="Search..." /></a></li>
+						placeholder="Search..." /></li>
 				</ul>
 			</nav>
 			<!-- .nav-menu -->
@@ -94,8 +94,10 @@
 				<div class="d-flex justify-content-between align-items-center">
 					<h2>Version Control Management</h2>
 					<noscript>
-          			<h1><strong>Please enable JavaScript for the entire content</strong></h1>
-        		</noscript>    
+						<h1>
+							<strong>Please enable JavaScript for the entire content</strong>
+						</h1>
+					</noscript>
 				</div>
 			</div>
 		</section>
@@ -147,11 +149,115 @@
 							events and casual degradation of human errors. Version Control
 							manages changes to documents, computer programs, large websites,
 							and other collections of information. Each revision is associated
-							with a timestamp and the person making the change. Revisions can
+							with a time-stamp and the person making the change. Revisions can
 							be compared, restored, and with some types of files, merged.</p>
-							
-							
-							
+
+
+
+						<p style="padding-top: 0px" align="justify">Even though it is
+							most often used for source code, in reality, there are many other
+							entities within an information solution to which version control
+							can and where practical be applied. This is especially true if
+							those entities are stored within text-based files or if they can
+							be exported to and imported from text-based files (e.g.,
+							configuration settings stored in a database). These additional
+							entities include but are not necessarily limited to the
+							following:</p>
+
+
+						<ul style="padding-left: 20px">
+							<li style="list-style-type: circle">configuration settings
+								(.conf, .cfg, .ini, etc.)</li>
+							<li style="list-style-type: circle">templates (e.g., web
+								page layouts, forms, etc.)</li>
+							<li style="list-style-type: circle">rules (e.g., access,
+								permissions, processing, filtering, scheduling, etc.)</li>
+							<li style="list-style-type: circle">shared inclusions (e.g.,
+								headers, footers, menus, etc.)</li>
+							<li style="list-style-type: circle">documentation (e.g.,
+								technical specs, user guides, operations guides, etc.)</li>
+							<li style="list-style-type: circle">web sites</li>
+						</ul>
+
+						<hr>
+						<h2>Background</h2>
+						<p align="justify">It is extremely rare if not impossible for
+							a developer to work on a single file, in isolation, without
+							sharing it with the outside world. Version Control (also known as
+							revision control, source control, or source code management)
+							provides a logical way to organize and control changes to various
+							versions of files.</p>
+
+						<h3 style="padding-bottom: 0px; margin-bottom: 0px">Brief
+							History</h3>
+						<p align="justify" style="padding-top: 0px">The first Version
+							Control Systems were introduced in 1972 by Bell Labs. The first
+							one was available only for UNIX and only worked with Source Code
+							files. It only worked on the development system and was not made
+							for sharing code, as it only worked for a single user. In 2000, a
+							new product called Subversion was created and supported non-text
+							files, tracking directory structure changes, such as file renames
+							and moves, and its transaction unit was the directory as opposed
+							to an individual file. So you could check in an entire directory
+							tree and check it out. In 2004, Microsoft created the Team
+							Foundation Server to replace its aging Visual SourceSafe Version
+							Control System, which was primarily a client server system. The
+							next generation of source code control software is called
+							Distributed Source Code Control. Distributed Source Code Control
+							is different in that there's not a central server that everybody
+							shares. Everybody shares their own individual repository and then
+							can share their changes with a central server or share their
+							changes with individual users.</p>
+
+						<h2 style="padding-bottom: 0px; margin-bottom: 0px">Concepts
+							in Version Control</h2>
+						<h3>Centralized Vs Distributed Version Control</h3>
+						<img src="assets/img/version-control-management/centralized.png"
+							style="float: left; width: 500px; height: 400px">
+						<p>
+							<b>Centralized Version Control Systems</b> (such as CVS,
+							Subversion, and Perforce) have a single server that contains all
+							the versioned files, and a number of clients that check out files
+							from that central place. For many years, this has been the
+							standard for version control. This setup offers many advantages,
+							especially over local VCSs. For example, everyone knows to a
+							certain degree what everyone else on the project is doing.
+							Administrators have fine-grained control over who can do what,
+							and it’s far easier to administer a CVCS than it is to deal with
+							local databases on every client. However, this setup also has
+							some serious downsides. The most obvious is the single point of
+							failure that the centralized server represents. If that server
+							goes down for an hour, then during that hour nobody can
+							collaborate at all or save versioned changes to anything they’re
+							working on. If the hard disk the central database is on becomes
+							corrupted, and proper backups haven’t been kept, you lose
+							absolutely everything — the entire history of the project except
+							whatever single snapshots people happen to have on their local
+							machines. Local VCS systems suffer from this same problem —
+							whenever you have the entire history of the project in a single
+							place, you risk losing everything.
+						</p>
+						<br> <img
+							src="assets/img/version-control-management/distributed.png"
+							style="float: right; width: 500px; height: 400px">
+						<p>
+							<b>Distributed Version Control Systems</b> (DVCSs) steps in to
+							take care of the above risk associated with the Centralized
+							approach. In a DVCS (such as Git, Mercurial, Bazaar or Darcs),
+							clients don’t just check out the latest snapshot of the files;
+							rather, they fully mirror the repository, including its full
+							history. Thus, if any server dies, and these systems were
+							collaborating via that server, any of the client repositories can
+							be copied back up to the server to restore it. Every clone is
+							really a full backup of all the data. Furthermore, many of these
+							systems deal pretty well with having several remote repositories
+							they can work with, so you can collaborate with different groups
+							of people in different ways simultaneously within the same
+							project. This allows you to set up several types of workflows
+							that aren’t possible in centralized systems, such as hierarchical
+							models.
+						</p>
+
 					</div>
 
 				</div>
