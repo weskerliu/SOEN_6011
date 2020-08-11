@@ -92,7 +92,7 @@
 			<div class="container">
 
 				<div class="d-flex justify-content-between align-items-center">
-					<h2>Version Control Management</h2>
+					<h2>Version Control Management (Distributed Approach)</h2>
 					<noscript>
 						<h1>
 							<strong>Please enable JavaScript for the entire content</strong>
@@ -209,11 +209,9 @@
 							can share their changes with a central server or share their
 							changes with individual users.</p>
 
-						<h2 style="padding-bottom: 0px; margin-bottom: 0px">Concepts
-							in Version Control</h2>
 						<h3>Centralized Vs Distributed Version Control</h3>
 						<img src="assets/img/version-control-management/centralized.png"
-							style="float: left; width: 500px; height: 400px">
+							style="float: left; width: 500px; height: 300px">
 						<p>
 							<b>Centralized Version Control Systems</b> (such as CVS,
 							Subversion, and Perforce) have a single server that contains all
@@ -235,11 +233,11 @@
 							whatever single snapshots people happen to have on their local
 							machines. Local VCS systems suffer from this same problem —
 							whenever you have the entire history of the project in a single
-							place, you risk losing everything.
+							place, you risk losing everything. Operations <br>
 						</p>
 						<br> <img
 							src="assets/img/version-control-management/distributed.png"
-							style="float: right; width: 500px; height: 400px">
+							style="float: right; width: 500px; height: 300px">
 						<p>
 							<b>Distributed Version Control Systems</b> (DVCSs) steps in to
 							take care of the above risk associated with the Centralized
@@ -257,6 +255,60 @@
 							that aren’t possible in centralized systems, such as hierarchical
 							models.
 						</p>
+
+						<br>
+						<hr>
+						<h2>Concepts in Distributed Version Control</h2>
+						<small>Figure 3.0: Operations in Git system</small> <br>
+						<div>
+							<img
+								src="assets/img/version-control-management/git-operations.png"
+								style="float: left; width: 500px; height: 750px; padding-right: 20px">
+
+							<h3 style="margin-bottom: 0px">Cloning</h3>
+							<p style="padding-top: 0px" align="justify">This concept
+								refers to the process of copying a version of the software from
+								the remote repository into one's local repository</p>
+
+							<h3 style="margin-bottom: 0px" align="justify">Snapshotting</h3>
+							<p style="padding-top: 0px">This deals with any sort of
+								modification of the files present in the local repository</p>
+
+							<h3 style="margin-bottom: 0px">Branching</h3>
+							<p style="padding-top: 0px" align="justify">Branching is what
+								happens when you want to work on multiple features at the same
+								time. You wouldn’t want to end up with a master branch which has
+								Feature 1 half done and Feature 2 half done. Furthermore, we
+								would separate the code base into “snapshots” (branches) and
+								work on and commit to them separately. As soon as we are ready,
+								we might merge this branch back into the master branch and push
+								it to the remote server.</p>
+
+							<h3 style="margin-bottom: 0px">Branching</h3>
+							<p style="padding-top: 0px" align="justify">Branching is what
+								happens when you want to work on multiple features at the same
+								time. You wouldn’t want to end up with a master branch which has
+								Feature 1 half done and Feature 2 half done. Furthermore, we
+								would separate the code base into “snapshots” (branches) and
+								work on and commit to them separately. As soon as we are ready,
+								we might merge this branch back into the master branch and push
+								it to the remote server.</p>
+
+
+							<h3 style="margin-bottom: 0px">Merging</h3>
+							<p style="padding-top: 0px" align="justify">While working on
+								feature version of the application, when there is a need of
+								including the code from other features, a merging operation can
+								be performed on one or more branches. While performing merging,
+								care needs to be taken to look out for conflicng code and
+								resolving it so preserve the important code</p>
+
+							<h3 style="margin-bottom: 0px">Inspection</h3>
+							<p style="padding-top: 0px" align="justify">As the name
+								suggests, this process helps the developers or managers keep an
+								eye on the source code by being able to view history of a
+								particular file, compare a file with its previous version, etc.</p>
+						</div>
 
 					</div>
 
@@ -399,23 +451,23 @@
 				<div class="row content">
 					<div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
 						<ul>
-							<li><i class="ri-check-double-line"></i> Working knowledge
-								on various types of files - properties file, configuration file,
-								source code file, etc.</li>
+							<li><i class="ri-check-double-line"></i> Working
+								understanding of the terms - repository, server, local, remote,
+							</li>
 							<li><i class="ri-check-double-line"></i> Knowledge on Graph
 								Theory (Branching)</li>
 							<li><i class="ri-check-double-line"></i> Basic Knowldge on
-								Git concepts - Centralized vs Distributed approach, pull/push,
-								commit/checkout, etc.</li>
+								the concept of source code control and versioning.</li>
+
 						</ul>
 					</div>
 					<div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up"
 						data-aos-delay="300">
-						<p>To be able to learn the skill of Version Control
-							Management, one must possess a good knowledge on the types of
-							files that contribute to forming the entire application. This is
-							necessary because different kinds of measures are needed to be
-							taken for different types of files, e.g. version control of
+						<p>To be able to learn the skill of Distributed Version
+							Control Management, one must possess a good knowledge on the
+							types of files that contribute to forming the entire application.
+							This is necessary because different kinds of measures are needed
+							to be taken for different types of files, e.g. version control of
 							properties file may differ from that of a java file. Moreover, a
 							basic knowledge on Graph theory and Git concepts is expected to
 							be present for excelling version control management.</p>
