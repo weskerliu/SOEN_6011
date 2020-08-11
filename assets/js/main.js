@@ -85,7 +85,7 @@ function search(){
       else if(searchText == 'release' || searchText == 'merge' || searchText == 'trunk' || searchText == 'branch' || searchText == 'repository' || searchText == 'distributed' || searchText == 'version' || searchText == 'git' || searchText == 'control' || searchText == 'push' || searchText == 'pull' ) {
         filesList.push("version-control");
       }
-      
+
 
 
     location.href = "search-results.html?"+searchText+"?"+filesList;
