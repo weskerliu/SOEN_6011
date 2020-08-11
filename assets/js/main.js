@@ -21,10 +21,21 @@ function runScript(e) {
 }
 
 
+
+
+
+
 function addToFileList()
 {
-  console.log(filesList);
-  document.getElementById("searchResultDiv").children[0].innerHTML += "<li>"+filesList[filesList.length-1]+"</li>";
+	var sPageURL = window.location.search.substring(1);
+	var splitParts = sPageURL.split(',');
+	console.log(splitParts)
+
+
+for(var i =0 ;i< splitParts.length; i++){
+	  document.getElementById("searchResultDiv").children[0].innerHTML += "<li><a href="+splitParts[i]+">"+splitParts[i]+"</a></li>";
+}
+
 }
 function search(){
     var searchText = document.getElementById("searchText").value;
@@ -36,13 +47,17 @@ function search(){
     else{
     	if(searchText == 'lead' || searchText == 'leadership' || searchText == 'manage' || searchText == 'motivate' || searchText == 'employee'){
         filesList.push("leadership.html");
+        filesList.push("cost-management.html");
 
       }
       if(searchText == 'requirement'){
         filesList.push("requirement-analysis.html");
       }
+      if(searchText == 'requirement'){
+        filesList.push("requirement-analysis.html");
+      }
     }
-    location.href = "search-results.html";
+    location.href = "search-results.html?"+filesList;
     console.log("while sending");
     console.log(filesList);
 

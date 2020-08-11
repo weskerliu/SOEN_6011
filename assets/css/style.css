@@ -1635,3 +1635,7 @@ section {
 #footer .footer-links a:hover {
   color: #3498db;
 }
+mark{
+    background: orange;
+    color: black;
+}
