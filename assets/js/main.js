@@ -3,9 +3,10 @@
  * https://bootstrapmade.com/vesperr-free-bootstrap-template/ Author:
  * BootstrapMade.com License: https://bootstrapmade.com/license/
  */
-
-var searchKeywords = ['lead', 'leadership', 'manage', 'motivate',
-						'employee', 'requirement', 'cost', 'data', 'database', 'analytics',
+ var filesList = [];
+var testFileName = null;
+var searchKeywords = ['achievement','lead', 'leadership', 'manage', 'motivate',
+						'employee', 'requirement', 'cost', 'data', 'database', 'analytics', 'design',
 						'problem-solving', 'attributes', 'automated', 'unit', 'testing', 'junit',
 						'debugging', 'logs', 'error', 'version', 'control', 'git', 'distributed', 'push',
 						'pull', 'checkout', 'commit', 'release', 'repository', 'history'];
@@ -19,12 +20,14 @@ function runScript(e) {
     }
 }
 
+
+function addToFileList()
+{
+  console.log(filesList);
+  document.getElementById("searchResultDiv").children[0].innerHTML += "<li>"+filesList[filesList.length-1]+"</li>";
+}
 function search(){
-
     var searchText = document.getElementById("searchText").value;
-
-    var filesList = [];
-
     console.log(searchText);
 
     if(searchKeywords.indexOf(searchText) <= -1){
@@ -33,13 +36,15 @@ function search(){
     else{
     	if(searchText == 'lead' || searchText == 'leadership' || searchText == 'manage' || searchText == 'motivate' || searchText == 'employee'){
         filesList.push("leadership.html");
-        location.href = "leadership.html";
 
       }
       if(searchText == 'requirement'){
         filesList.push("requirement-analysis.html");
       }
     }
+    location.href = "search-results.html";
+    console.log("while sending");
+    console.log(filesList);
 
 }
 
