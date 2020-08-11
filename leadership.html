@@ -56,7 +56,7 @@
           <ul>
             <li><a href="leadership.html">Skill 1 - Leadership</a></li>
             <li><a href="requirement-analysis.html">Skill 2 - Requirement Analysis</a></li>
-            <li><a href="data-modeling.html">Skill 3 - Data Modeling</a></li>
+            <li><a href="data-modeling.html">Skill 3 - Relational Database Design</a></li>
             <li><a href="cost-management.html">Skill 4 - Cost Management</a></li>
             <li><a href="unit-testing.html">Skill 5 - Automated Unit Testing </a></li>
             <li><a href="reverse-engineering.html">Skill 6 - Reverse Engineering</a></li>
@@ -64,8 +64,8 @@
             <li><a href="version-control.html">Skill 8 - Version Control Management</a></li>
           </ul>
         </li>
-        <li class="get-started"><a href="search-page.html">Add Search Bar</a></li>
-      </ul>
+<li class="search-input"><input id="searchText" type="text"
+						onkeypress="runScript(event)" placeholder=" Search..." /></li>      </ul>
     </nav><!-- .nav-menu -->
 
   </div>
@@ -73,12 +73,17 @@
 
 <main id="main">
 
+
+
   <!-- ======= Breadcrumbs ======= -->
   <section id="skillname" class="breadcrumbs">
     <div class="container">
 
       <div class="d-flex justify-content-between align-items-center">
-        <h2>Reverse Engineering</h2>        
+        <h2>Leadership</h2>
+        <noscript>
+          <h1><strong>Please enable JavaScript for the entire content</strong></h1>
+        </noscript>
       </div>
     </div>
   </section><!-- End Breadcrumbs -->
@@ -91,24 +96,37 @@
 
         <div class="col-lg-8">
           <div class="owl-carousel portfolio-details-carousel">
-            <img src="assets/img/reveng1.jpg" class="img-fluid" alt="">
+            <img src="assets/img/leaderMagnify.jpg" class="img-fluid" alt="Finding a leader" style="width:600x;height:450px;">
           </div>
         </div>
 
         <div class="col-lg-4 portfolio-info">
           <!-- <h3>Skills Information</h3> -->
           <ul>
-            <li><strong>Skill Classification</strong>: Software Maintenance</li>
-            <li><strong>Related Software Engineering Area(s) </strong>: Software Testing</li>
+            <li><strong>Skill Classification</strong>: Non-technical/Soft-skill</li>
+            <li><strong>Related Software Engineering Area(s) </strong>: Software Engineering Management</li>
           </ul>
 
           <p>
-          Description of your Skill,,, For the image on left try to have a picture with good resolution------->>>>Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
+            "Leaders perceive future outcomes to proactively react to present situations while in contrast managers aim for stability and try to solve the problem by executing existing ways." [1]
           </p>
+
+          <p>
+            Leadership is known as “the process of influencing the activities of an organized group in its efforts towards goal setting and goal achievement.” [2]
+          </p>
+          <style>
+            p {
+              text-align: justify ;
+            }
+          </style>
+
+
         </div>
 
         <div class="col-lg-12 portfolio-info">
-          <p>If more content ---->>>>>>Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.</p>
+          <p>Leadership is a skill that a person must exhibit to be successful in every aspect of his/her life. Leadership skills are necessary whenever there is a group of people involved, small or big, for example, running a family, running a company or running a country. Any group without a good leader is doomed to collapse and fail. There is a popular misconception that “Leaders are born, not made”. But on the contrary, most of the great leaders of this world became great through hard work and experience. The ability to effectively lead, motivate and direct a group of people – whether it is in business, sport or politics - requires a very complex set of skills, mostly acquired through experiences, self development as well as access to subsequent training.</p>
+          <br>
+          <p>When it comes to Software Engineering, it is often associated with hard-skills such as programming, debugging, testing, and so on. While that is true to some extent, it cannot be ignored that soft skills are also vital to software engineering as a discipline. Leadership in software engineering can be in many forms - teamlead, project manager, product manager, etc. This document explores the various aspects of how leadership skills are important in software engineering.</p>
         </div>
 
       </div>
@@ -118,10 +136,10 @@
 
 </main><!-- End #main -->
 
-  <main id="main">    
+  <main id="main">
 
-     <!-- ======= Contents Section ======= -->
-     <section id="features" class="features">
+    <!-- ======= Contents Section ======= -->
+    <section id="features" class="features">
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
@@ -130,76 +148,76 @@
 
         <div class="row" data-aos="fade-up" data-aos-delay="300">
           <div class="col-lg-3 col-md-4">
-            <div class="icon-box">              
-              <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
+            <div class="icon-box">
+              <i  class="ri-file-list-3-line" style="color: #5578ff;"></i>
               <h3><a href="#skillname" class="scrollto">Name of Skill</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
             <div class="icon-box">
-              <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
+              <i class="ri-file-list-3-line" style="color: #5578ff;"></i>
               <h3><a href="#skilldetails" class="scrollto">Skill Classification</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <div class="icon-box">              
-              <i class="ri-disc-line" style="color: #b20969;"></i>
+            <div class="icon-box">
+              <i  class="ri-file-list-3-line" style="color: #5578ff;"></i>
               <h3><a href="#prereq" class="scrollto">Prerequisites</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
             <div class="icon-box">
-              <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
+              <i  class="ri-file-list-3-line" style="color: #5578ff;"></i>
               <h3><a href="#skilldetails" class ="scrollto">Related Software Engineering Area(s)</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
-              <i class="ri-database-2-line" style="color: #47aeff;"></i>
+              <i  class="ri-file-list-3-line" style="color: #5578ff;"></i>
               <h3><a href="#rationale" class="scrollto">Rationale</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
-              <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
+              <i  class="ri-file-list-3-line" style="color: #5578ff;"></i>
               <h3><a href="#roles" class="scrollto">Roles</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
-              <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
+              <i  class="ri-file-list-3-line" style="color: #5578ff;"></i>
               <h3><a href="#activities" class="scrollto">Activities and Artifacts</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
-              <i class="ri-price-tag-2-line" style="color: #4233ff;"></i>
+              <i  class="ri-file-list-3-line" style="color: #5578ff;"></i>
               <h3><a href="#example" class="scrollto">Real-World Example/Scenario</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
-              <i class="ri-anchor-line" style="color: #b2904f;"></i>
+              <i  class="ri-file-list-3-line" style="color: #5578ff;"></i>
               <h3><a href="#academia" class="scrollto">Role of Academia or Industry</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">              
-              <i class="ri-store-line" style="color: #ffbb2c;"></i>
+            <div class="icon-box">
+              <i  class="ri-file-list-3-line" style="color: #5578ff;"></i>
               <h3><a href="#tools" class="scrollto">Tools</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
-              <i class="ri-base-station-line" style="color: #ff5828;"></i>
+              <i  class="ri-file-list-3-line" style="color: #5578ff;"></i>
               <h3><a href="#assessment" class="scrollto">Skill Self-Assessment</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
-              <i class="ri-fingerprint-line" style="color: #29cc61;"></i>
+              <i  class="ri-file-list-3-line" style="color: #5578ff;"></i>
               <h3><a href="#references" class="scrollto">References</a></h3>
-              
+
             </div>
           </div>
         </div>
@@ -217,29 +235,51 @@
 
         <div class="row content">
           <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
-            <!-- <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-              magna aliqua.
-            </p> -->
+            <p>
+              Leadership skills in the software industry can come in many forms. Some of which are discussed below.
+            </p>
             <ul>
-              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-              <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
-              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+              <li><i class="ri-check-double-line"></i><strong> Technical skills</strong></li>
+              <p class = "points-tab"> A leader must be able to identify and understand the technological challenges in a project and select team members with the specific skills for the project.  </p>
+              <li><i class="ri-check-double-line"></i><strong> Decision-making skills</strong></li>
+              <p class = "points-tab"> A leader should be able to make decisions in critical situations. These decisions may be complex decisions like which programming language to choose or emotional ones like the termination of a low performing employee. In any case, a leader must be bold enough to make these decisions.  </p>
+              <li><i class="ri-check-double-line"></i><strong> Interpersonal skills</strong></li>
+              <p class = "points-tab">Interpersonal skills are necessary for a leader to effectively communicate his/her ideas to the team or senior management and to build a trusting and friendly relation towards the team. </p>
+              <li><i class="ri-check-double-line"></i><strong> Product development skills</strong></li>
+              <p class = "points-tab"> A leader should have sufficient knowledge on software product development such as software life cycles, software engineering processes, etc. so that he/she can take informed steps towards the effective delivery of a project. </p>
             </ul>
+            <style>
+              .points-tab {
+                padding-left:1.8em ;
+              }
+            </style>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
             <p>
-              Optional Content else cooment this div ---->>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-              velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum.
+              Besides these five must have skills for a leader, there are few other skills that a good leader needs to posses. [3] [4]
             </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> Visionary</li>
+              <li><i class="ri-check-double-line"></i> Accountability</li>
+              <li><i class="ri-check-double-line"></i> Delegation</li>
+              <li><i class="ri-check-double-line"></i> Empathy</li>
+              <li><i class="ri-check-double-line"></i> Motivating</li>
+              <li><i class="ri-check-double-line"></i> Inspiring</li>
+              <li><i class="ri-check-double-line"></i> Empowering</li>
+              <li><i class="ri-check-double-line"></i> Recognizing success</li>
+              <li><i class="ri-check-double-line"></i> Problem solving</li>
+              <li><i class="ri-check-double-line"></i> Communication</li>
+              <li><i class="ri-check-double-line"></i> Building a team</li>
+
+
+            </ul>
             <!-- <a href="#" class="btn-learn-more">Learn More</a> -->
           </div>
         </div>
 
       </div>
     </section><!-- End Prerequisites Section -->
-    
+
     <!-- ======= Rationale Section ======= -->
     <section id="rationale" class="faq">
       <div class="container">
@@ -251,11 +291,25 @@
         <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-5">
             <i class="ri-question-line"></i>
-            <h4>Add/Remove div based on our data?</h4>
+            <h4>Software Engineering knowledge and good technical skills</h4>
           </div>
           <div class="col-lg-7">
             <p>
-              Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+              First and foremost, to be a good leader in any domain, you need to have sufficient technical knowledge about that particular domain.
+              With a graduate degree in software engineering and three years of industrial experience, I believe I fulfill this criteria to be an effective leader.
+            </p>
+          </div>
+        </div><!-- End Item-->
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+          <div class="col-lg-5">
+            <i class="ri-question-line"></i>
+            <h4>Logical and analytical thinking</h4>
+          </div>
+          <div class="col-lg-7">
+            <p>
+              Logical and analytical thinking are inherent to a software engineer. As a software engineer in a leadership role, I believe I can apply the same rigorous logical analytic
+              thinking towards the technical and management tasks and improve my skills further.
             </p>
           </div>
         </div><!-- End Item-->
@@ -263,11 +317,12 @@
         <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
           <div class="col-lg-5">
             <i class="ri-question-line"></i>
-            <h4>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h4>
+            <h4>Ability to make quick decisions and set priorities</h4>
           </div>
           <div class="col-lg-7">
             <p>
-              Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.
+              The ability to make decisions and set priorities follows logical and analytical thinking. In order to make critical decisions, one must be able to analyze all possible options
+              and choose a rational one. I believe this is one of my strongest suits which is why I think I can make a good leader.
             </p>
           </div>
         </div><!-- End Item-->
@@ -275,11 +330,12 @@
         <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="500">
           <div class="col-lg-5">
             <i class="ri-question-line"></i>
-            <h4>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</h4>
+            <h4>People person and good interpersonal skills</h4>
           </div>
           <div class="col-lg-7">
             <p>
-              Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+              Needless to say, a good leader must have good relations with the people working with or under him/her. A leader must be able to listen well, communicate proactively, be polite and personable, and
+              act as a friend and a mentor. As a leader, I will have the chance to communicate with more people and can sharpen my interpersonal skills further.
             </p>
           </div>
         </div><!-- End  Item-->
@@ -293,30 +349,48 @@
 
         <div class="section-title" data-aos="fade-up">
           <h2>Roles</h2>
-          <p>Optional,,,, Add/Remove div based on your data</p>
+          <p>Leadership skills in software engineering can be applicable on different levels, from leading a small team to leading a global enterprise. Some of these roles are discussed below. [5]</p>
         </div>
 
         <div class="owl-carousel testimonials-carousel"  data-aos="fade-up" data-aos-delay="200" >
 
           <div class="testimonial-wrap">
             <div class="testimonial-item">
-              <h3>Eg.Developer</h3>
+              <h3>Technical Lead</h3>
               <!-- <h4>Ceo &amp; Founder</h4> -->
               <p>
                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-               Brief Description
+               A technical lead is a software engineer who is usually more experienced than his/her peers and guides the technical vision and execution of a software project. Their area of influence includes technical direction, implementation choices, coding styles, the establishment of best practices, and technical standards.
                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
             </div>
-          <!-- </div>
-
-          <div class="testimonial-wrap"> -->
             <div class="testimonial-item">
-              <h3>Eg.Analyst</h3>
+              <h3>Team Lead</h3>
+              <!-- <h4>Ceo &amp; Founder</h4> -->
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                A team leader is a technical lead for all projects that a particular team takes on.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+            </div>
+           </div>
+
+          <div class="testimonial-wrap">
+            <div class="testimonial-item">
+              <h3>Engineering Manager</h3>
               <!-- <h4>Designer</h4> -->
               <p>
                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid  cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                An engineering manager is a software engineer who has chosen a management career track over a technical one. He or she has up to ten direct reports, but preferably no more than six or seven. He or she spends a significant part of their time coding and the remaining on people management and leadership activities.
+                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+            </div>
+            <div class="testimonial-item">
+              <h3>Director of Engineering</h3>
+              <!-- <h4>Designer</h4> -->
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                The director level is traditionally the first of a series of executive roles. It is common for a director of engineering to provide technical guidance, write code and participate in low-level discussions about the architecture and implementation of systems.
                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
             </div>
@@ -324,11 +398,11 @@
 
           <div class="testimonial-wrap">
             <div class="testimonial-item">
-              <h3>Eg.Elicitator</h3>
+              <h3>Chief Technological Officer (CTO)</h3>
               <!-- <h4>Store Owner</h4> -->
               <p>
                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                In general, the responsibilities of a CTO depends wildly on the size of the company. It can include product vision and being the public face of the company’s technology. It can also include being responsible for identifying, leverage and integrate new technologies and drive business strategy and revenue.
                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
             </div>
@@ -336,11 +410,11 @@
 
           <div class="testimonial-wrap"> -->
             <div class="testimonial-item">
-              <h3>Eg.Specialist</h3>
+              <h3>Chief Information Officer (CIO)</h3>
               <!-- <h4>Freelancer</h4> -->
               <p>
                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                The CIO is an operation-oriented executive who is internally facing and focused on improving the bottom line by setting strategy and direction to enhance the company’s internal infrastructure and technical operations.
                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
             </div>
@@ -348,7 +422,7 @@
         </div>
 
       </div>
-    </section><!-- End Roles Section -->  
+    </section><!-- End Roles Section -->
 
     <!-- =======  Activities and Artifacts Section ======= -->
     <section id="activities" class="faq">
@@ -361,11 +435,14 @@
         <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-5">
             <i class="ri-question-line"></i>
-            <h4>Add/Remove Div based on your data?</h4>
+            <h4>Set a vision</h4>
           </div>
           <div class="col-lg-7">
             <p>
-              Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+              Leadership vision is an essential means for focusing attention on what matters most; what you want to accomplish in your life and what kind of leader you wish to be [6]. A leader in the software engineering industry must
+              be able to set vision for his team, department, company branch or an entire franchise.
+              <br>For example, an e-commerce software company might the vision <em>"To make shopping fun and easy."</em> This kind company-wide vision is set by the leaders in the executive role such as a CTO or CIO.
+              <br><br>Setting a vision for a team or a company might require a vision document.
             </p>
           </div>
         </div><!-- End Item-->
@@ -373,11 +450,12 @@
         <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
           <div class="col-lg-5">
             <i class="ri-question-line"></i>
-            <h4>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h4>
+            <h4>Motivate employees</h4>
           </div>
           <div class="col-lg-7">
             <p>
-              Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.
+              A leader must figure out ways on how to motivate employees or team-members to accomplish work goals. There are numerous ways in which a leader can motivate his/her employees or peers such as
+              recognizing success, providing positive feedbacks, be respectful and polite. Besides these, material motivations such as rewards, vacations, incentives, promotions can be even more effective to motivate employees.
             </p>
           </div>
         </div><!-- End Item-->
@@ -385,11 +463,26 @@
         <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="500">
           <div class="col-lg-5">
             <i class="ri-question-line"></i>
-            <h4>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</h4>
+            <h4>Identify needs</h4>
           </div>
           <div class="col-lg-7">
             <p>
-              Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+              A leader must be able to identify the needs of his/her employees, peers or team members. In some situations, employees might not be able to or do not want to openly state what they need or want. In such cases, a leader must be
+              capable enough to recognize such situations and resolve it accordingly.
+            </p>
+          </div>
+        </div><!-- End  Item-->
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="500">
+          <div class="col-lg-5">
+            <i class="ri-question-line"></i>
+            <h4>Performance reviews</h4>
+          </div>
+          <div class="col-lg-7">
+            <p>
+              Conducting performance reviews is necessary for the growth of a company or a team. It is a must that a well-performing employee be appreciated with incentives such as promotion or salary increase and low-performing employees be penalized
+              which might even lead to termination. This is a hard reality in every industry and a leader must be bold enough to make such harsh decisions when needed.
+              <br><br> This process might include producing performance report for a team or even for the entire company.
             </p>
           </div>
         </div><!-- End  Item-->
@@ -403,49 +496,72 @@
 
         <div class="section-title" data-aos="fade-up">
           <h2>Real-World Example/Scenario</h2>
-          <p>Optional Content,,,, Can Add links to any youtube videos, articles etc.</p>
+          <p>
+            The following section provides a brief description on how the leadership skills and vision of certain individuals created and shaped the biggest technological
+            giants of the modern age.
+          </p>
         </div>
 
         <div class="row">
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
               <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4 class="title"><a href="">Example-1</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi 
-                Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
-                Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
-                Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
+              <h4 class="title"><a href="">Bill Gates</a></h4>
+              <p class="description">
+                When it comes to leadership in the 21st century, there is no better example than Bill Gates. Under his leadership, the biggest tech-giant of the modern day - Microsoft was born.
+                His vision and ideas redefined personal computing by making it cheaper and easily accessible to general public. This <a href="https://www.youtube.com/watch?v=Fzb1Tqo4G7I" class = "leadership-videos">video </a> further explains
+                how Bill Gates' leadership skills led to him becoming one of the richest men on the planet.
+              </p>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
               <div class="icon"><i class="bx bx-file"></i></div>
-              <h4 class="title"><a href="">Example-2</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
+              <h4 class="title"><a href="">Elon Musk</a></h4>
+              <p class="description">
+                According to 2019 Global Brand Health Report published by <a href = "https://hired.com/page/brand-health-report/top-global-employer-brands" class = "leadership-videos">Hired</a>, <a href = "https://www.youtube.com/watch?v=i7nZBJVI26A" class = "leadership-videos">Elon Musk </a>was voted as the most inspiring leaders in technology.
+                Elon Musk is the CEO of many tech companies among which SpaceX and Tesla are the most famous ones. His vision for SpaceX is to build and settle human colonies on Mars, which proves that not only is he a tech leader
+                but also a leader for the entire human race.
+              </p>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
               <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4 class="title"><a href="">Example-3</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+              <h4 class="title"><a href="">Larry Page</a></h4>
+              <p class="description">
+                <a href = "https://www.youtube.com/watch?v=P7TEqoEWtrc" class = "leadership-videos">Larry Page </a>is an internet entrepreneur and computer scientist, who co-invented the PageRank algorithm which was used to develop the most widely used search engine of the 21st century - Google. Under his vision and leadership, Google
+                created other famous products like Gmail, Google Maps, YouTube, Android OS, etc. which are one of the most used products over the internet.
+              </p>
             </div>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
               <div class="icon"><i class="bx bx-world"></i></div>
-              <h4 class="title"><a href="">Example-4</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+              <h4 class="title"><a href="">Steve Jobs</a></h4>
+              <p class="description">
+                <a href = "https://www.youtube.com/watch?v=UF8uR6Z6KLc" class = "leadership-videos">Steve Jobs </a>was one of the most successful entrepreneurial leaders of the last half-century. He was highly successful, both as an entrepreneurial founder and after leading Apple to corporate greatness after the company
+                had become stagnant for more than a decade under different leadership [8]. Under Steve Jobs' vision, Apple created some highly successful products like Macintosh, Mac OS X, iTunes, iPod, iPhone, etc.
+              </p>
             </div>
           </div>
-
+          <style>
+            .leadership-videos {
+              color:#29CC61;
+              background-color: transparent;
+            }
+            .leadership-videos:hover {
+              color:green;
+              background-color: transparent;
+            }
+          </style>
         </div>
 
       </div>
-    </section><!-- End Real-World Example/Scenario Section -->   
+    </section><!-- End Real-World Example/Scenario Section -->
 
   <!-- ======= Role of Academia/Industry Section ======= -->
   <section id="academia" class="about">
@@ -458,23 +574,33 @@
       <div class="row content">
         <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
           <p>
-            Content ---->>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            <strong>Academia: </strong>The computer science or software engineering curriculum in most of universities are primarily focused on the hard/technical skills and soft skills are mostly ignored.
+            The fact that most of the academic projects do not have a designated leader proves that leadership skills are not given much attention in academia.
+            <br><br>
+            However, every academic team project I have come across usually has an unsaid leader. He/she is not voted as a leader by the team or picked by the teacher as a team leader, but will be doing most of the
+            works that a leader does. This can include calling project meetings, asking and reporting on progress, getting in touch with the teacher to clarify requirements, and so on. Showing such traits in multiple academic
+            projects one after another can really help develop leadership skills in a student.
+            <br><br>
+            This example alone shows that, although, the academic curriculum does not give much attention to developing leadership skills, one can attain it by acting as a leader in academic projects.
           </p>
         </div>
         <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
           <p>
-            Continued Content ---->>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
+            <strong>Industry: </strong>In the above section about four tech leaders, three of them were high-school/college dropouts. Using these examples, it can fairly be said that these great tech leaders culminated their leadership
+            skills through hardships in the industry rather than during their time in academic institutions.
+            <br><br>
+            There are two ways to attain leadership in industry. The first one being starting as a developer and rising above the ranks as shown above in Roles section - technical lead, team lead, engineering manager and so on. This is a long
+            process and does not always guarantee the top position. However, you can still develop valuable leadership skills staying at the lower levels and leading the team at that level. One does not always need to be at a top management
+            position to be a good leader.
+            <br><br>
+            The next way is to do what the tech leaders mentioned in the above section did - become an entrepreneur and start your own company. This way you can really develop your leadership skills.
           </p>
           <!-- <a href="#" class="btn-learn-more">Learn More</a> -->
         </div>
       </div>
 
     </div>
-  </section><!-- End Role of Academia/Industry Section --> 
+  </section><!-- End Role of Academia/Industry Section -->
 
     <!-- ======= Tool Details Section ======= -->
     <br>
@@ -491,44 +617,16 @@
           </div>
 
           <div class="col-xl-7 d-flex align-items-stretch pt-4 pt-xl-0" data-aos="fade-left" data-aos-delay="300">
-            <div class="content d-flex flex-column justify-content-center">
-              <div class="row">
-                <div class="col-md-6 d-md-flex align-items-md-stretch">
-                  <div class="count-box">
-                    <i class="icofont-document-folder"></i>
-                    <span>Tool Name 1</span>
-                    <p><strong>Put Logos above for all tools...Keep the image on the left as it is</strong> Name & description here. Add/Remove div based on your data</p>
-                  </div>
-                </div>
-
-                <div class="col-md-6 d-md-flex align-items-md-stretch">
-                  <div class="count-box">
-                    <i class="icofont-document-folder"></i>
-                    <span>Tool Name 2</span>
-                    <p><strong>Projects</strong> adipisci atque cum quia aspernatur totam laudantium et quia dere tan
-                      adipisci atque cum quia aspernatur totam laudantium et quia dere tan
-                      adipisci atque cum quia aspernatur totam laudantium et quia dere tan
-                      adipisci atque cum quia aspernatur totam laudantium et quia dere tan</p>
-                  </div>
-                </div>
-
-                <div class="col-md-6 d-md-flex align-items-md-stretch">
-                  <div class="count-box">
-                    <i class="icofont-document-folder"></i>
-                    <span>Tool Name 3</span>
-                    <p><strong>Years of experience</strong> aut commodi quaerat modi aliquam nam ducimus aut voluptate non vel</p>
-                  </div>
-                </div>
-
-                <div class="col-md-6 d-md-flex align-items-md-stretch">
-                  <div class="count-box">
-                    <i class="icofont-document-folder"></i>
-                    <span>Tool Name 4</span>
-                    <p><strong>Awards</strong> rerum asperiores dolor alias quo reprehenderit eum et nemo pad der</p>
-                  </div>
-                </div>
-              </div>
-            </div><!-- End .content-->
+            <p>Leadership skill is a soft-skill and comes with experience and practice. There are no software, programs or tools that you can use particularly to improve your leadership skills. If you want to be a good Python programmer, you
+              can improve your programming skills by learning new frameworks, writing more code and keep practicing, which is not the case with leadership skills. It is however necessary that a leader at a particular level or in a particular role
+              be familiar with the tools being used by his peers or subordinates. For example, a technical lead or team lead must be familiar with the programming languages, APIs, frameworks, etc. that his/her team is using for the project.
+              <br><br>
+              Measuring leadership skills are difficult to quantify and measure but there are some assessment tools that one can use. The most famous one is the <a href = "https://www.myersbriggs.org/my-mbti-personality-type/mbti-basics/">Myers-Briggs Type Indicator (MBTI) </a>[9] which can help a person identify their leadership styles.
+              Another similar assessment tool is the <a href = "https://www.discprofile.com/what-is-disc/how-disc-works/">DiSC </a>profile which measures your tendencies and preferences — your patterns of behavior [10].
+              <br><br>
+              These tools are somewhat helpful to identify leadership skills or traits in a person but do not tell you how to achieve those skills. Therefore, one must practice the skills mentioned in the
+              Prerequisites section to become an effective leader.
+            </p>
           </div>
         </div>
 
@@ -548,21 +646,23 @@
           <div class="testimonial-wrap">
             <div class="testimonial-item">
               <img src="assets/img/person.png" class="testimonial-img" alt="">
-              <h3>Score/10</h3>
-              <h4>Star Rating</h4>
+              <h3>Score: 7/10</h3>
               <p>
                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
+                I believe I have the necessary prerequisites such as technical skills, decision making skills, etc. to be an effective leader. I have acted as a leader in numerous academic projects
+                during my undergraduate and graduate studies. I have also worked as a backend developer for three years in a software company during which I have seen and observed how my team leads, managers
+                and directors operated the team and the department itself. However, since I have not acted as a leader at any level in a software industry, I know that I have a lot yet to learn which is why I think
+                a score of 7 justifies my leadership skills.
                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
             </div>
-          </div>         
-        
+          </div>
+
         <!-- </div> -->
 
       </div>
     </section>
-    <!-- End Skill Assessment Section -->  
+    <!-- End Skill Assessment Section -->
 
   <!-- ======= References Section ======= -->
   <section id="references" class="portfolio-details">
@@ -573,26 +673,32 @@
       </div>
 
       <div class="row content">
-        <div class="col-lg-12" data-aos="fade-up" data-aos-delay="150">       
-        <ul>          
-          <li></i><a href="#">www.example.com</a></li>
-          <li></i><a href="#">www.example.com</a></li>
-          <li></i><a href="#">www.example.com</a></li>
-          <li></i><a href="#">www.example.com</a></li>
+        <div class="col-lg-12" data-aos="fade-up" data-aos-delay="150">
+        <ul>
+          <li></i>[1] D. Tuffley, “Optimising virtual team leadership in Global Software Development,” IET Softw., vol. 6, no. 3, pp. 176–84, Jun. 2012.</li>
+          <li></i>[2] A. Richter and D. Wagner, “Leadership 2.0: Engaging and Supporting Leaders in the Transition towards a Networked Organization,” in 2014 47th Hawaii International Conference on System Sciences (HICSS), 6-9 Jan. 2014, 2014, pp. 574–83. </li>
+          <li></i>[3]<a href="https://www.hexacta.com/7-skills-of-a-good-team-leader-in-software-development/"> 7 SKILLS OF A GOOD TEAM LEADER IN SOFTWARE DEVELOPMENT</a></li>
+          <li></i>[4]<a href="https://www.adamenfroy.com/leadership-qualities"> 11 Leadership Qualities: A List of Skills to Make a Good Leader</a></li>
+          <li></i>[5]<a href="https://www.coderhood.com/8-engineering-leadership-roles-explained/"> 8 Engineering Leadership Roles Explained</a></li>
+          <li></i>[6]<a href="https://hbr.org/2008/08/title"> Define Your Personal Leadership Vision</a></li>
+          <li></i>[7]<a href="https://www.cnbc.com/2019/09/17/elon-musk-named-the-most-inspirational-leader-in-tech.html"> The most inspiring leaders in tech</a></li>
+          <li></i>[8]<a href="https://www.psychologytoday.com/us/blog/cutting-edge-leadership/201202/why-steve-jobs-is-leadership-nightmare"> Why Steve Jobs Is a Leadership Nightmare</a></li>
+          <li></i>[9]<a href="https://www.myersbriggs.org/my-mbti-personality-type/mbti-basics/"> MBTI® Basics</a></li>
+          <li></i>[10]<a href="https://www.discprofile.com/what-is-disc/how-disc-works/"> How DiSC Personality Tests Work</a></li>
         </ul>
       </div>
      </div>
 
     </div>
   </section>
-  <!-- End References Section --> 
+  <!-- End References Section -->
 
-  </main><!-- End #main -->  
+  </main><!-- End #main -->
 
   <!-- ======= Add Footer File======= -->
   <!-- <div id="footer"></div>  -->
-  
-   
+
+
   <footer id="footer">
     <div class="container">
       <div class="row d-flex align-items-center">

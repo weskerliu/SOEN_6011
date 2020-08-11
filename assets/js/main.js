@@ -1,9 +1,89 @@
 /**
-* Template Name: Vesperr - v2.1.0
-* Template URL: https://bootstrapmade.com/vesperr-free-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+ * Template Name: Vesperr - v2.1.0 Template URL:
+ * https://bootstrapmade.com/vesperr-free-bootstrap-template/ Author:
+ * BootstrapMade.com License: https://bootstrapmade.com/license/
+ */
+ var filesList = [];
+var testFileName = null;
+var searchKeywords = ['achievement','lead', 'leadership', 'manage', 'motivate',
+						'employee', 'requirement', 'cost', 'data', 'database', 'analytics', 'design',
+						'problem-solving', 'attributes', 'automated', 'unit', 'testing', 'junit',
+						'debugging', 'logs', 'error', 'version', 'control', 'git', 'distributed', 'push',
+						'pull', 'checkout', 'commit', 'release', 'repository', 'history'];
+
+
+function runScript(e) {
+    // See notes about 'which' and 'key'
+    if (e.keyCode == 13) {
+        search();
+        return false;
+    }
+}
+
+
+function addToFileList()
+{
+	var searchString = window.location.search.substring(1);
+	var splitParts = searchString.split('?');
+	var searchKeyword = splitParts[0];
+	var files = splitParts[1].split(",");
+
+
+	for(var i =0 ;i< files.length; i++){
+		var fileName = files[i]+".html";
+		var articleName = files[i].replace("-"," ");
+		var titleCaseName = titleCase(articleName);
+	  	
+	document.getElementById("searchResultDiv").children[0].innerHTML += "<li><a href="+fileName+">"+titleCaseName+"</a></li>";
+	}
+
+	document.getElementById('searchKeyword').innerHTML = searchKeyword;
+
+}
+
+function search(){
+    var searchText = document.getElementById("searchText").value;
+    console.log(searchKeywords.indexOf(searchText));
+
+    if(searchKeywords.indexOf(searchText) <= -1){
+    	    location.href = "search-failed.html";
+    }
+    else{
+    	if(searchText == 'lead' || searchText == 'leadership' || searchText == 'manage' || searchText == 'motivate' || searchText == 'employee'){
+        filesList.push("leadership");
+        filesList.push("cost-management");
+        filesList.push("version-control");
+        filesList.push("data-modelling");
+        filesList.push("debugging");
+        filesList.push("requirement-analysis");
+        filesList.push("reverse-engineering");
+        filesList.push("unit-testing");
+      }
+      if(searchText == 'requirement'){
+        filesList.push("requirement-analysis.html");
+      }
+      if(searchText == 'requirement'){
+        filesList.push("requirement-analysis.html");
+      }
+  
+    location.href = "search-results.html?"+searchText+"?"+filesList;
+    console.log("while sending");
+    console.log(filesList);
+	}
+
+}
+
+function titleCase(str) {
+   var splitStr = str.toLowerCase().split(' ');
+   for (var i = 0; i < splitStr.length; i++) {
+       // You do not need to check if i is larger than splitStr length, as your for does that for you
+       // Assign it back to the array
+       splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);     
+   }
+   // Directly return the joined string
+   return splitStr.join(' '); 
+}
+
 !(function($) {
   "use strict";
 

@@ -15,7 +15,9 @@
 
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -39,89 +41,100 @@
 
 <body>
 
-   <!-- ======= Header ======= -->
- <header id="header" class="fixed-top d-flex align-items-center">
-  <div class="container d-flex align-items-center">
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
 
-    <div class="logo mr-auto">
-      <h1 class="text-light"><a href="index.html"><span>Sestopia</span></a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
-    </div>
-
-    <nav class="nav-menu d-none d-lg-block">
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li class="drop-down active"><a href="">Skills</a>
-          <ul>
-            <li><a href="leadership.html">Skill 1 - Leadership</a></li>
-            <li><a href="requirement-analysis.html">Skill 2 - Requirement Analysis</a></li>
-            <li><a href="data-modeling.html">Skill 3 - Data Modeling</a></li>
-            <li><a href="cost-management.html">Skill 4 - Cost Management</a></li>
-            <li><a href="unit-testing.html">Skill 5 - Automated Unit Testing </a></li>
-            <li><a href="reverse-engineering.html">Skill 6 - Reverse Engineering</a></li>
-            <li><a href="debugging.html">Skill 7 - Debugging</a></li>
-            <li><a href="version-control.html">Skill 8 - Version Control Management</a></li>
-          </ul>
-        </li>
-        <li class="get-started"><a href="search-page.html">Add Search Bar</a></li>
-      </ul>
-    </nav><!-- .nav-menu -->
-
-  </div>
-</header><!-- End Header -->
-
-<main id="main">
-
-  <!-- ======= Breadcrumbs ======= -->
-  <section id="skillname" class="breadcrumbs">
-    <div class="container">
-
-      <div class="d-flex justify-content-between align-items-center">
-        <h2>Reverse Engineering</h2>        
+      <div class="logo mr-auto">
+        <h1 class="text-light"><a href="index.html"><span>Sestopia</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
       </div>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class="drop-down active"><a href="">Skills</a>
+            <ul>
+              <li><a href="leadership.html">Skill 1 - Leadership</a></li>
+              <li><a href="requirement-analysis.html">Skill 2 - Requirement Analysis</a></li>
+              <li><a href="data-modeling.html">Skill 3 - Relational Database Design</a></li>
+              <li><a href="cost-management.html">Skill 4 - Cost Management</a></li>
+              <li><a href="unit-testing.html">Skill 5 - Automated Unit Testing </a></li>
+              <li><a href="reverse-engineering.html">Skill 6 - Reverse Engineering</a></li>
+              <li><a href="debugging.html">Skill 7 - Debugging</a></li>
+              <li><a href="version-control.html">Skill 8 - Version Control Management</a></li>
+            </ul>
+          </li>
+			<li class="search-input"><input id="searchText" type="text"
+						onkeypress="runScript(event)" placeholder=" Search..." /></li>        </ul>
+      </nav><!-- .nav-menu -->
+
     </div>
-  </section><!-- End Breadcrumbs -->
+  </header><!-- End Header -->
 
-  <!-- ======= Skill Info Section ======= -->
-  <section id="skilldetails" class="portfolio-details">
-    <div class="container">
+  <main id="main">
 
-      <div class="row">
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="skillname" class="breadcrumbs">
+      <div class="container">
 
-        <div class="col-lg-8">
-          <div class="owl-carousel portfolio-details-carousel">
-            <img src="assets/img/reveng1.jpg" class="img-fluid" alt="">
+        <div class="d-flex justify-content-between align-items-center">
+          <h2>Relational Database Design</h2>
+          <noscript>
+            <h1><strong>Please enable JavaScript for the entire content</strong></h1>
+          </noscript>
+        </div>
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= Skill Info Section ======= -->
+    <section id="skilldetails" class="portfolio-details">
+      <div class="container">
+
+        <div class="row">
+
+          <div class="col-lg-8">
+            <div class="owl-carousel portfolio-details-carousel">
+              <img
+                src="https://i1.wp.com/softwareengineeringdaily.com/wp-content/uploads/2015/08/Database-1024x7401.jpg?zoom=2&resize=730%2C389"
+                class="img-fluid" alt="">
+            </div>
           </div>
-        </div>
 
-        <div class="col-lg-4 portfolio-info">
-          <!-- <h3>Skills Information</h3> -->
-          <ul>
-            <li><strong>Skill Classification</strong>: Software Maintenance</li>
-            <li><strong>Related Software Engineering Area(s) </strong>: Software Testing</li>
-          </ul>
+          <div class="col-lg-4 portfolio-info">
+            <!-- <h3>Skills Information</h3> -->
+            <ul>
+              <li><strong>Skill Classification</strong>:Hard Technical Skill </li>
+              <li><strong>Related Software Engineering Area(s) </strong>: Software Design</li>
+            </ul>
 
-          <p>
-          Description of your Skill,,, For the image on left try to have a picture with good resolution------->>>>Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.
-          </p>
-        </div>
+            <p>
+              A Database is a system that allows everyone to share, manage and use data.
+              There are many types of databases. A relational database is a type of database.
+              It uses a structure that allows us to identify and access data in relation to another piece of data within the database.
+              Data in a relational database is organized into tables.
+            </p>
+          </div>
 
-        <div class="col-lg-12 portfolio-info">
-          <p>If more content ---->>>>>>Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia. Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt eius.</p>
+          <div class="col-lg-12 portfolio-info">
+            <p>Relational database design (RDD) models information and data into a set of tables with rows and columns.
+              Each row of a relation/table represents a record, and each column represents an attribute of data.
+              The Structured Query Language (SQL) is used to manipulate relational databases.
+            </p>
+          </div>
+
         </div>
 
       </div>
+    </section><!-- End Skill Info Section -->
 
-    </div>
-  </section><!-- End Skill Info Section -->
+  </main><!-- End #main -->
 
-</main><!-- End #main -->
+  <main id="main">
 
-  <main id="main">    
-
-     <!-- ======= Contents Section ======= -->
-     <section id="features" class="features">
+    <!-- ======= Contents Section ======= -->
+    <section id="features" class="features">
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
@@ -130,76 +143,76 @@
 
         <div class="row" data-aos="fade-up" data-aos-delay="300">
           <div class="col-lg-3 col-md-4">
-            <div class="icon-box">              
-              <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
+            <div class="icon-box">
+              <i  class="ri-file-list-3-line" style="color: #5578ff;"></i>
               <h3><a href="#skillname" class="scrollto">Name of Skill</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
             <div class="icon-box">
-              <i class="ri-bar-chart-box-line" style="color: #5578ff;"></i>
+              <i class="ri-file-list-3-line" style="color: #5578ff;"></i>
               <h3><a href="#skilldetails" class="scrollto">Skill Classification</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
-            <div class="icon-box">              
-              <i class="ri-disc-line" style="color: #b20969;"></i>
+            <div class="icon-box">
+              <i  class="ri-file-list-3-line" style="color: #5578ff;"></i>
               <h3><a href="#prereq" class="scrollto">Prerequisites</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
             <div class="icon-box">
-              <i class="ri-paint-brush-line" style="color: #e361ff;"></i>
+              <i  class="ri-file-list-3-line" style="color: #5578ff;"></i>
               <h3><a href="#skilldetails" class ="scrollto">Related Software Engineering Area(s)</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
-              <i class="ri-database-2-line" style="color: #47aeff;"></i>
+              <i  class="ri-file-list-3-line" style="color: #5578ff;"></i>
               <h3><a href="#rationale" class="scrollto">Rationale</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
-              <i class="ri-gradienter-line" style="color: #ffa76e;"></i>
+              <i  class="ri-file-list-3-line" style="color: #5578ff;"></i>
               <h3><a href="#roles" class="scrollto">Roles</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
-              <i class="ri-file-list-3-line" style="color: #11dbcf;"></i>
+              <i  class="ri-file-list-3-line" style="color: #5578ff;"></i>
               <h3><a href="#activities" class="scrollto">Activities and Artifacts</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
-              <i class="ri-price-tag-2-line" style="color: #4233ff;"></i>
+              <i  class="ri-file-list-3-line" style="color: #5578ff;"></i>
               <h3><a href="#example" class="scrollto">Real-World Example/Scenario</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
-              <i class="ri-anchor-line" style="color: #b2904f;"></i>
+              <i  class="ri-file-list-3-line" style="color: #5578ff;"></i>
               <h3><a href="#academia" class="scrollto">Role of Academia or Industry</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
-            <div class="icon-box">              
-              <i class="ri-store-line" style="color: #ffbb2c;"></i>
+            <div class="icon-box">
+              <i  class="ri-file-list-3-line" style="color: #5578ff;"></i>
               <h3><a href="#tools" class="scrollto">Tools</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
-              <i class="ri-base-station-line" style="color: #ff5828;"></i>
+              <i  class="ri-file-list-3-line" style="color: #5578ff;"></i>
               <h3><a href="#assessment" class="scrollto">Skill Self-Assessment</a></h3>
             </div>
           </div>
           <div class="col-lg-3 col-md-4 mt-4">
             <div class="icon-box">
-              <i class="ri-fingerprint-line" style="color: #29cc61;"></i>
+              <i  class="ri-file-list-3-line" style="color: #5578ff;"></i>
               <h3><a href="#references" class="scrollto">References</a></h3>
-              
+
             </div>
           </div>
         </div>
@@ -222,24 +235,46 @@
               magna aliqua.
             </p> -->
             <ul>
-              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
-              <li><i class="ri-check-double-line"></i> Duis aute irure dolor in reprehenderit in voluptate velit</li>
-              <li><i class="ri-check-double-line"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat</li>
+
+              <li><i class="ri-check-double-line"></i> Learn each step of the process of design database</li>
+              <p class="points-tab">
+                The Technical skill for relational database design, contains 4 steps
+              <ul>
+                <li>Define attributes/table</li>
+                <li>Define primary keys</li>
+                <li>Define relationships</li>
+                <li>Normalization</li>
+              </ul>
+              </p>
+              <li><i class="ri-check-double-line"></i>familiar with data modeling tools</li>
+              <p class="points-tab">
+                Technical skill, knowing how to use the data modeling tools, help saves time.
+              </p>
+              <li><i class="ri-check-double-line"></i>Analytical Problem-Solving</li>
+              <p class="points-tab">
+                Approaching high-level data challenges with a clear eye on what is important;
+                employing the right approach/methods to make the maximum use of time and human resources.
+              </p>
+              <li><i class="ri-check-double-line"></i>Effective Communication</li>
+              <p class="points-tab">
+                Careful listening to management, data analysts and relevant staff to come up with the best data design;
+                explaining complex concepts to non-technical colleagues.
+              </p>
             </ul>
           </div>
           <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
-            <p>
-              Optional Content else cooment this div ---->>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+            <!-- <p>
+              Optional Content else cooment this div Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
               velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-              culpa qui officia deserunt mollit anim id est laborum.
-            </p>
+              culpa qui officia deserunt mollit anim id est laborum.-->
+            <!--</p> -->
             <!-- <a href="#" class="btn-learn-more">Learn More</a> -->
           </div>
         </div>
 
       </div>
     </section><!-- End Prerequisites Section -->
-    
+
     <!-- ======= Rationale Section ======= -->
     <section id="rationale" class="faq">
       <div class="container">
@@ -251,11 +286,12 @@
         <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-5">
             <i class="ri-question-line"></i>
-            <h4>Add/Remove div based on our data?</h4>
+            <h4>Ease of Data Retrieval</h4>
           </div>
           <div class="col-lg-7">
             <p>
-              Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+              Relational database accessing data does not require navigating a pathway through a tree or hierarchy, User can just use query to simply retrieve data from any table.
+              If users require multi tables then just use join to include all the information.
             </p>
           </div>
         </div><!-- End Item-->
@@ -263,11 +299,13 @@
         <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
           <div class="col-lg-5">
             <i class="ri-question-line"></i>
-            <h4>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h4>
+            <h4>Normalization</h4>
           </div>
           <div class="col-lg-7">
             <p>
-              Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.
+              Normalization can help the database reduce redundant data, with more tables it will reduce the index per table,
+              so that memory usage is less and data search/modification is faster and easier. For example, if you want to delete one item,
+              every data reference to that will be automatically deleted also, you do not need to go to another table to delete the attribute that contains the same item.
             </p>
           </div>
         </div><!-- End Item-->
@@ -275,11 +313,13 @@
         <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="500">
           <div class="col-lg-5">
             <i class="ri-question-line"></i>
-            <h4>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</h4>
+            <h4>Flexibility</h4>
           </div>
           <div class="col-lg-7">
             <p>
-              Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+              the realtional data modeling will make the database easy to modifi and maintain,
+              when you want to add a new data or add a new structure it is esay and will not affect other data, when you
+              want to delete a item, you do not need to delete one by one that item related to that delete, when you delete it, it will automatically delete every related item.
             </p>
           </div>
         </div><!-- End  Item-->
@@ -287,36 +327,39 @@
       </div>
     </section><!-- End Rationale Section -->
 
-     <!-- ======= Roles Section ======= -->
-     <section id="roles" class="testimonials section-bg">
+    <!-- ======= Roles Section ======= -->
+    <section id="roles" class="testimonials section-bg">
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
           <h2>Roles</h2>
-          <p>Optional,,,, Add/Remove div based on your data</p>
+
         </div>
 
-        <div class="owl-carousel testimonials-carousel"  data-aos="fade-up" data-aos-delay="200" >
+        <div class="owl-carousel testimonials-carousel" data-aos="fade-up" data-aos-delay="200">
 
           <div class="testimonial-wrap">
             <div class="testimonial-item">
-              <h3>Eg.Developer</h3>
+              <h3>back-end Developer</h3>
               <!-- <h4>Ceo &amp; Founder</h4> -->
               <p>
                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-               Brief Description
+                back-end Developer is for develop back-end adn create the api so that the front-end can call and use the
+                api, Therefore,they have to work with real data
+                include design database, build database.
                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
             </div>
-          <!-- </div>
+            <!-- </div>
 
           <div class="testimonial-wrap"> -->
             <div class="testimonial-item">
-              <h3>Eg.Analyst</h3>
+              <h3>Database Administrator</h3>
               <!-- <h4>Designer</h4> -->
               <p>
                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid  cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                The Database Administrator installs and maintains the database servers.
+                So they need to Understand the design of the database and also need to design it.
                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
             </div>
@@ -324,31 +367,30 @@
 
           <div class="testimonial-wrap">
             <div class="testimonial-item">
-              <h3>Eg.Elicitator</h3>
+              <h3>database Developer</h3>
               <!-- <h4>Store Owner</h4> -->
               <p>
                 <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                database Developer creates the scripts that build the database and import data from older databases.
+                he will need the skill to nnderstand the design, sometime even need to design also
                 <i class="bx bxs-quote-alt-right quote-icon-right"></i>
               </p>
             </div>
-          <!-- </div>
 
-          <div class="testimonial-wrap"> -->
-            <div class="testimonial-item">
-              <h3>Eg.Specialist</h3>
-              <!-- <h4>Freelancer</h4> -->
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-            </div>
+            <div class="testimonial-wrap">
+              <div class="testimonial-item">
+                <h3>database Architect</h3>
+                <!-- <h4>Store Owner</h4> -->
+                <p>
+                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Data architects create blueprints for data management systems. After assessing a company’s potential data sources (internal and external),
+                  architects design a plan to integrate, centralize, protect and maintain them
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                </p>
+              </div>
+
           </div>
-        </div>
-
-      </div>
-    </section><!-- End Roles Section -->  
+    </section><!-- End Roles Section -->
 
     <!-- =======  Activities and Artifacts Section ======= -->
     <section id="activities" class="faq">
@@ -361,11 +403,13 @@
         <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
           <div class="col-lg-5">
             <i class="ri-question-line"></i>
-            <h4>Add/Remove Div based on your data?</h4>
+            <h4>Define relations/attributes</h4>
           </div>
           <div class="col-lg-7">
             <p>
-              Feugiat pretium nibh ipsum consequat. Tempus iaculis urna id volutpat lacus laoreet non curabitur gravida. Venenatis lectus magna fringilla urna porttitor rhoncus dolor purus non.
+              Find the relationship between each attribute. In other word, find the property of each table. For example,
+              a Bank user will have account, password, name, date of birth,
+              address, phone, email.
             </p>
           </div>
         </div><!-- End Item-->
@@ -373,11 +417,12 @@
         <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
           <div class="col-lg-5">
             <i class="ri-question-line"></i>
-            <h4>Feugiat scelerisque varius morbi enim nunc faucibus a pellentesque?</h4>
+            <h4>Define primary keys</h4>
           </div>
           <div class="col-lg-7">
             <p>
-              Dolor sit amet consectetur adipiscing elit pellentesque habitant morbi. Id interdum velit laoreet id donec ultrices. Fringilla phasellus faucibus scelerisque eleifend donec pretium. Est pellentesque elit ullamcorper dignissim.
+              find out the unique attribute for each table, in order to identify each column, usually is id.In the Bank
+              user example Primary keys will be the account for each user.
             </p>
           </div>
         </div><!-- End Item-->
@@ -385,14 +430,33 @@
         <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="500">
           <div class="col-lg-5">
             <i class="ri-question-line"></i>
-            <h4>Tempus quam pellentesque nec nam aliquam sem et tortor consequat?</h4>
+            <h4>Define relationships</h4>
           </div>
           <div class="col-lg-7">
             <p>
-              Molestie a iaculis at erat pellentesque adipiscing commodo. Dignissim suspendisse in est ante in. Nunc vel risus commodo viverra maecenas accumsan. Sit amet nisl suscipit adipiscing bibendum est. Purus gravida quis blandit turpis cursus in
+              Define each table's relationship, one to one, one to many, many to many.
+              For example, a bank user can have many bank acount so user table will have one to many relationship with
+              bank acount table.
             </p>
           </div>
         </div><!-- End  Item-->
+
+        <div class="row faq-item d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="500">
+          <div class="col-lg-5">
+            <i class="ri-question-line"></i>
+            <h4>Normalization</h4>
+          </div>
+          <div class="col-lg-7">
+            <p>
+              To Normalize each table confirms there are no multiple values in each column of the table.
+              It makes sure each attribute is dependent on the primary key, if not separates it into another table.
+              Confirms there are no redundancies in the table.
+              For example, in personal information, a country will be separated into a country table because many people may have the same country.
+            </p>
+          </div>
+        </div><!-- End  Item-->
+
+
 
       </div>
     </section><!-- End  Activities and Artifacts Section -->
@@ -403,78 +467,74 @@
 
         <div class="section-title" data-aos="fade-up">
           <h2>Real-World Example/Scenario</h2>
-          <p>Optional Content,,,, Can Add links to any youtube videos, articles etc.</p>
         </div>
 
         <div class="row">
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
-              <div class="icon"><i class="bx bxl-dribbble"></i></div>
-              <h4 class="title"><a href="">Example-1</a></h4>
-              <p class="description">Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi 
-                Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
-                Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
-                Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi</p>
-            </div>
+            <a href="https://www.youtube.com/watch?v=qlLpDBSOe3o&t=32s" target="_blank">
+              <div class="icon-box" data-aos="fade-up" data-aos-delay="100">
+                <div class="icon"><i class="bx bx-file"></i></div>
+                <h4 class="title"><a href="https://www.youtube.com/watch?v=qlLpDBSOe3o&t=32s" target="_blank">banking
+                    system</a></h4>
+              </div>
+            </a>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
-              <div class="icon"><i class="bx bx-file"></i></div>
-              <h4 class="title"><a href="">Example-2</a></h4>
-              <p class="description">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore</p>
-            </div>
+            <a href="https://www.youtube.com/watch?v=NvrpuBAMddw" target="_blank">
+              <div class="icon-box" data-aos="fade-up" data-aos-delay="200">
+                <div class="icon"><i class="bx bx-file"></i></div>
+                <h4 class="title"><a href="https://www.youtube.com/watch?v=NvrpuBAMddw">student course system</a></h4>
+              </div>
+            </a>
           </div>
 
           <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
             <div class="icon-box" data-aos="fade-up" data-aos-delay="300">
-              <div class="icon"><i class="bx bx-tachometer"></i></div>
-              <h4 class="title"><a href="">Example-3</a></h4>
-              <p class="description">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia</p>
+              <div class="icon"><i class="bx bx-file"></i></div>
+              <h4 class="title"><a href="">company</a></h4>
+              <p class="description">In a company, to manage employees and goods, developer needs to develop a database to save and manage large amounts of data.
+                Therefore, they will design a relational database.
+                To help them reduce redundant data and manage the data efficiently.
+              </p>
             </div>
           </div>
 
-          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0">
-            <div class="icon-box" data-aos="fade-up" data-aos-delay="400">
-              <div class="icon"><i class="bx bx-world"></i></div>
-              <h4 class="title"><a href="">Example-4</a></h4>
-              <p class="description">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
-            </div>
+
+
+        </div>
+
+      </div>
+    </section><!-- End Real-World Example/Scenario Section -->
+
+    <!-- ======= Role of Academia/Industry Section ======= -->
+    <section id="academia" class="about">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <h2>Role of Academia/Industry</h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
+            <p>
+              Academia side, relational database design is a hard technical skill, every project that needs to encounter data,
+              there is a big possibility for a database. Students who are hired by the industry will carry out the design method, experience,
+              and principle so that industry projects will be impacted by those students on how to design a database.
+            </p>
           </div>
-
+          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <p>
+              Based on method and experience industry gain, they will develop different tools like Lucidchart, dbdiagram.io, etc.
+              that can help people to easily draw the database blueprints for the project.
+              So the student can use those tools to design a relational database for software project in academia.
+            </p>
+            <!-- <a href="#" class="btn-learn-more">Learn More</a> -->
+          </div>
         </div>
 
       </div>
-    </section><!-- End Real-World Example/Scenario Section -->   
-
-  <!-- ======= Role of Academia/Industry Section ======= -->
-  <section id="academia" class="about">
-    <div class="container">
-
-      <div class="section-title" data-aos="fade-up">
-        <h2>Role of Academia/Industry</h2>
-      </div>
-
-      <div class="row content">
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="150">
-          <p>
-            Content ---->>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
-        <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-up" data-aos-delay="300">
-          <p>
-            Continued Content ---->>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-            velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-            culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-          <!-- <a href="#" class="btn-learn-more">Learn More</a> -->
-        </div>
-      </div>
-
-    </div>
-  </section><!-- End Role of Academia/Industry Section --> 
+    </section><!-- End Role of Academia/Industry Section -->
 
     <!-- ======= Tool Details Section ======= -->
     <br>
@@ -486,7 +546,8 @@
         </div>
 
         <div class="row">
-          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-xl-start" data-aos="fade-right" data-aos-delay="150">
+          <div class="image col-xl-5 d-flex align-items-stretch justify-content-center justify-content-xl-start"
+            data-aos="fade-right" data-aos-delay="150">
             <img src="assets/img/tools.jpg" alt="" class="img-fluid">
           </div>
 
@@ -496,35 +557,45 @@
                 <div class="col-md-6 d-md-flex align-items-md-stretch">
                   <div class="count-box">
                     <i class="icofont-document-folder"></i>
-                    <span>Tool Name 1</span>
-                    <p><strong>Put Logos above for all tools...Keep the image on the left as it is</strong> Name & description here. Add/Remove div based on your data</p>
+                    <span>Lucidchart</span>
+                    <p><strong>Lucidchart</strong> is cloud-based and a collaborative diagram software.
+                      Free plan comes with a limit of 3 diagrams and 60 objects per diagram.
+                    </p>
                   </div>
                 </div>
 
                 <div class="col-md-6 d-md-flex align-items-md-stretch">
                   <div class="count-box">
                     <i class="icofont-document-folder"></i>
-                    <span>Tool Name 2</span>
-                    <p><strong>Projects</strong> adipisci atque cum quia aspernatur totam laudantium et quia dere tan
-                      adipisci atque cum quia aspernatur totam laudantium et quia dere tan
-                      adipisci atque cum quia aspernatur totam laudantium et quia dere tan
-                      adipisci atque cum quia aspernatur totam laudantium et quia dere tan</p>
+                    <span>dbdiagram.io</span>
+                    <p><strong>dbdiagram.io</strong> is a quick and simple database designer to help you draw your database diagrams using their own Domain-specific language (DSL).
+                      They have a simple language to define, you can easily edit/copy without leaving the keyboard. \
+                      They focus exclusively on drawing database relationship diagrams.
+                      Allows you to save and share your diagrams
+                    </p>
                   </div>
                 </div>
 
                 <div class="col-md-6 d-md-flex align-items-md-stretch">
                   <div class="count-box">
                     <i class="icofont-document-folder"></i>
-                    <span>Tool Name 3</span>
-                    <p><strong>Years of experience</strong> aut commodi quaerat modi aliquam nam ducimus aut voluptate non vel</p>
+                    <span>SQLDBM</span>
+                    <p><strong>SQLDBM</strong> offers you an easy, convenient way to design your database absolutely anywhere on any browser,
+                      working away without need for any extra database engine or database modelling tools or apps.
+                      They incorporate any needed database rules and objects such as database keys, schemas, indexes, column constraints and relationships.
+                      Only support MySQL and MS SQL.
+                    </p>
                   </div>
                 </div>
 
                 <div class="col-md-6 d-md-flex align-items-md-stretch">
                   <div class="count-box">
                     <i class="icofont-document-folder"></i>
-                    <span>Tool Name 4</span>
-                    <p><strong>Awards</strong> rerum asperiores dolor alias quo reprehenderit eum et nemo pad der</p>
+                    <span>QuickDBD</span>
+                    <p><strong>QuickDBD</strong>helps you quickly draw a diagram using just text input. Free for 1 public diagram and 10 tables,
+                      plans at $14/month for unlimited tables and private diagrams.
+                      It quickly captures ideas, and you can draw schema diagrams using only the keyboard.
+                      Supports exporting to SQL, PDF and Word.
                   </div>
                 </div>
               </div>
@@ -545,54 +616,96 @@
 
         <!-- <div class="owl-carousel testimonials-carousel" data-aos="fade-up" data-aos-delay="200"> -->
 
-          <div class="testimonial-wrap">
-            <div class="testimonial-item">
-              <img src="assets/img/person.png" class="testimonial-img" alt="">
-              <h3>Score/10</h3>
-              <h4>Star Rating</h4>
-              <p>
-                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-              </p>
-            </div>
-          </div>         
-        
+        <div class="testimonial-wrap">
+          <div class="testimonial-item">
+            <img src="assets/img/person.png" class="testimonial-img" alt="">
+            <h3>7/10</h3>
+            <h4>Star Rating</h4>
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              I think I got a score of 7 out of 10 on relational database design. Because I have done some relational database designs when I was an undergraduate.
+              I am familiar with the process. However, I think in some areas I still need to practice more,
+              for example, the Normalization.
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+          </div>
+        </div>
+
         <!-- </div> -->
 
       </div>
     </section>
-    <!-- End Skill Assessment Section -->  
+    <!-- End Skill Assessment Section -->
 
-  <!-- ======= References Section ======= -->
-  <section id="references" class="portfolio-details">
-    <div class="container">
+    <!-- ======= References Section ======= -->
+    <section id="references" class="portfolio-details">
+      <div class="container">
 
-      <div class="section-title" data-aos="fade-up">
-        <h2>References</h2>
+        <div class="section-title" data-aos="fade-up">
+          <h2>References</h2>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-12" data-aos="fade-up" data-aos-delay="150">
+            <ul>
+              <li></i><a href="https://www.techopedia.com/definition/25113/relational-database-design-rdd"
+                  target="_blank">
+                  https://www.techopedia.com/definition/25113/relational-database-design-rdd</a></li>
+              <li></i><a href="https://dev.to/lmolivera/everything-you-need-to-know-about-relational-databases-3ejl"
+                  target="_blank">https://dev.to/lmolivera/everything-you-need-to-know-about-relational-databases-3ejl</a>
+              </li>
+              <li></i><a href="https://www3.ntu.edu.sg/home/ehchua/programming/sql/Relational_Database_Design.html"
+                  target="_blank">https://www3.ntu.edu.sg/home/ehchua/programming/sql/Relational_Database_Design.html</a>
+              </li>
+              <li></i><a
+                  href="https://essentials.news/en/it-trends/article/2019-database-trends-sql-vs-nosql-top-databases-single-multiple-42382459d5"
+                  target="_blank">https://essentials.news/en/it-trends/article/2019-database-trends-sql-vs-nosql-top-databases-single-multiple-42382459d5</a>
+              </li>
+              <li></i><a href="https://www.g2.com/categories/relational-databases"
+                  target="_blank">https://www.g2.com/categories/relational-databases</a>
+              </li>
+              <li></i><a href="https://softwareengineeringdaily.com/2015/08/24/databases-fundamental-answers/"
+                  target="_blank">https://softwareengineeringdaily.com/2015/08/24/databases-fundamental-answers/</a>
+              </li>
+              <li></i><a
+                  href="https://www.techwalla.com/articles/what-are-the-advantages-of-a-relational-database-model"
+                  target="_blank">https://www.techwalla.com/articles/what-are-the-advantages-of-a-relational-database-model</a>
+              </li>
+              <li></i><a href="https://www.youtube.com/watch?v=qlLpDBSOe3o&t=32s"
+                  target="_blank">https://www.youtube.com/watch?v=qlLpDBSOe3o&t=32s</a>
+              </li>
+              <li></i><a href="https://www.holistics.io/blog/top-5-free-database-diagram-design-tools/"
+                  target="_blank">https://www.holistics.io/blog/top-5-free-database-diagram-design-tools/</a>
+              </li>
+              <li></i><a href="https://www.youtube.com/watch?v=NvrpuBAMddw"
+                  target="_blank">https://www.youtube.com/watch?v=NvrpuBAMddw</a>
+              </li>
+              <li></i><a href="https://www.databasezone.com/techdocs/devteam.html"
+                  target="_blank">https://www.databasezone.com/techdocs/devteam.html</a>
+              </li>
+              <li></i><a
+                  href="https://www.mastersindatascience.org/careers/data-architect/#:~:text=To%20become%20a%20data%20architect%2C%20you%20should%20start%20with%20a,systems%20analysis%20and%20technology%20architectures."
+                  target="_blank">
+                  https://www.mastersindatascience.org/careers/data-architect/#:~:text=To%20become%20a%20data%20architect%2C%20you%20should%20start%20with%20a,systems%20analysis%20and%20technology%20architectures.
+                </a>
+              </li>
+
+            </li>
+
+            </ul>
+          </div>
+        </div>
+
       </div>
+    </section>
+    <!-- End References Section -->
 
-      <div class="row content">
-        <div class="col-lg-12" data-aos="fade-up" data-aos-delay="150">       
-        <ul>          
-          <li></i><a href="#">www.example.com</a></li>
-          <li></i><a href="#">www.example.com</a></li>
-          <li></i><a href="#">www.example.com</a></li>
-          <li></i><a href="#">www.example.com</a></li>
-        </ul>
-      </div>
-     </div>
-
-    </div>
-  </section>
-  <!-- End References Section --> 
-
-  </main><!-- End #main -->  
+  </main><!-- End #main -->
 
   <!-- ======= Add Footer File======= -->
   <!-- <div id="footer"></div>  -->
-  
-   
+
+
   <footer id="footer">
     <div class="container">
       <div class="row d-flex align-items-center">
@@ -617,7 +730,7 @@
     </div>
   </footer>
 
-<!-- End Footer -->
+  <!-- End Footer -->
 
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
