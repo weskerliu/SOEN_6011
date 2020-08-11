@@ -27,14 +27,17 @@ function runScript(e) {
 
 function addToFileList()
 {
-	var sPageURL = window.location.search.substring(1);
-	var splitParts = sPageURL.split(',');
-	console.log(splitParts)
+	var searchString = window.location.search.substring(1);
+	var splitParts = searchString.split('?');
+	var searchKeyword = splitParts[0];
+	var files = splitParts[1].split(",");
 
 
-for(var i =0 ;i< splitParts.length; i++){
-	  document.getElementById("searchResultDiv").children[0].innerHTML += "<li><a href="+splitParts[i]+">"+splitParts[i]+"</a></li>";
+for(var i =0 ;i< files.length; i++){
+	  document.getElementById("searchResultDiv").children[0].innerHTML += "<li><a href="+files[i]+">"+files[i]+"</a></li>";
 }
+
+document.getElementById('searchKeyword').innerHTML = searchKeyword;
 
 }
 function search(){
@@ -57,7 +60,7 @@ function search(){
         filesList.push("requirement-analysis.html");
       }
     }
-    location.href = "search-results.html?"+filesList;
+    location.href = "search-results.html?"+searchText+"?"+filesList;
     console.log("while sending");
     console.log(filesList);
 
