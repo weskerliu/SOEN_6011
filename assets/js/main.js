@@ -22,10 +22,23 @@ function runScript(e) {
 function search(){
 
     var searchText = document.getElementById("searchText").value;
+
+    var filesList = [];
+
     console.log(searchText);
 
     if(searchKeywords.indexOf(searchText) <= -1){
     	    location.href = "search-failed.html";
+    }
+    else{
+    	if(searchText == 'lead' || searchText == 'leadership' || searchText == 'manage' || searchText == 'motivate' || searchText == 'employee'){
+        filesList.push("leadership.html");
+        location.href = "leadership.html";
+
+      }
+      if(searchText == 'requirement'){
+        filesList.push("requirement-analysis.html");
+      }
     }
 
 }
