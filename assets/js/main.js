@@ -4,6 +4,28 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
+
+function runScript(e) {
+    //See notes about 'which' and 'key'
+    if (e.keyCode == 13) {
+        search();
+        return false;
+    }
+}
+
+function search(){
+
+    var searchText = document.getElementById("searchInput");
+    console.log(searchText);
+
+    location.href = "search-failed.html";
+
+
+}
+
+
+
 !(function($) {
   "use strict";
 
