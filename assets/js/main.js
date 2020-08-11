@@ -1,13 +1,18 @@
 /**
-* Template Name: Vesperr - v2.1.0
-* Template URL: https://bootstrapmade.com/vesperr-free-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+ * Template Name: Vesperr - v2.1.0 Template URL:
+ * https://bootstrapmade.com/vesperr-free-bootstrap-template/ Author:
+ * BootstrapMade.com License: https://bootstrapmade.com/license/
+ */
+
+var searchKeywords = ['lead', 'leadership', 'manage', 'motivate',
+						'employee', 'requirement', 'cost', 'data', 'database', 'analytics',
+						'problem-solving', 'attributes', 'automated', 'unit', 'testing', 'junit',
+						'debugging', 'logs', 'error', 'version', 'control', 'git', 'distributed', 'push',
+						'pull', 'checkout', 'commit', 'release', 'repository', 'history'];
 
 
 function runScript(e) {
-    //See notes about 'which' and 'key'
+    // See notes about 'which' and 'key'
     if (e.keyCode == 13) {
         search();
         return false;
@@ -16,11 +21,12 @@ function runScript(e) {
 
 function search(){
 
-    var searchText = document.getElementById("searchInput");
+    var searchText = document.getElementById("searchText").value;
     console.log(searchText);
 
-    location.href = "search-failed.html";
-
+    if(searchKeywords.indexOf(searchText) <= -1){
+    	    location.href = "search-failed.html";
+    }
 
 }
 
