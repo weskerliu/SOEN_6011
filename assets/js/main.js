@@ -43,7 +43,7 @@ function addToFileList()
 
 function search(){
     var searchText = document.getElementById("searchText").value;
-    console.log(searchText);
+    console.log(searchKeywords.indexOf(searchText));
 
     if(searchKeywords.indexOf(searchText) <= -1){
     	    location.href = "search-failed.html";
@@ -65,10 +65,11 @@ function search(){
       if(searchText == 'requirement'){
         filesList.push("requirement-analysis.html");
       }
-    }
+  
     location.href = "search-results.html?"+searchText+"?"+filesList;
     console.log("while sending");
     console.log(filesList);
+	}
 
 }
 
