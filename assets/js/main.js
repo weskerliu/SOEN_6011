@@ -33,7 +33,7 @@ function addToFileList()
 		var fileName = files[i]+".html";
 		var articleName = files[i].replace("-"," ");
 		var titleCaseName = titleCase(articleName);
-	  	
+
 	document.getElementById("searchResultDiv").children[0].innerHTML += "<li><a href="+fileName+">"+titleCaseName+"</a></li>";
 	}
 
@@ -49,23 +49,45 @@ function search(){
     	    location.href = "search-failed.html";
     }
     else{
-    	if(searchText == 'lead' || searchText == 'leadership' || searchText == 'manage' || searchText == 'motivate' || searchText == 'employee'){
-        filesList.push("leadership");
+    	if(searchText == 'analysis' ||  searchText == 'lead' || searchText == 'object' || searchText == 'change' || searchText == 'knowledge' || searchText == 'leadership' || searchText == 'manage' || searchText == 'motivate' || searchText == 'employee'){
         filesList.push("cost-management");
         filesList.push("version-control");
         filesList.push("data-modelling");
         filesList.push("debugging");
-        filesList.push("requirement-analysis");
+        filesList.push("leadership");
         filesList.push("reverse-engineering");
         filesList.push("unit-testing");
+        filesList.push("requirement-analysis");
+
       }
-      if(searchText == 'requirement'){
-        filesList.push("requirement-analysis.html");
+      else if(searchText == 'requirement'){
+        filesList.push("requirement-analysis");
       }
-      if(searchText == 'requirement'){
-        filesList.push("requirement-analysis.html");
+      else if(searchText == 'achievement'){
+        filesList.push("cost-management");
       }
-  
+      else if(searchText == 'cost' || searchText == 'price' || searchText == 'estimation' || searchText == 'value' ){
+        filesList.push("cost-management");
+
+      }
+      else if(searchText == 'data' || searchText == 'database' || searchText == 'modelling' || searchText == 'value' || searchText == 'relational' || searchText == 'query' || searchText == 'sql' ){
+        filesList.push("cost-management");
+
+      }
+      else if(searchText == 'debug' || searchText == 'API' || searchText == 'code' || searchText == 'test' || searchText == 'testing' || searchText == 'loc' ) {
+        filesList.push("debugging");
+        filesList.push("unit-testing");
+      }
+      else if(searchText == 'reverse' || searchText == 'engineering' || searchText == 'API' || searchText == 'testing' || searchText == 'loc' ) {
+        filesList.push("debugging");
+        filesList.push("unit-testing");
+      }
+      else if(searchText == 'release' || searchText == 'merge' || searchText == 'trunk' || searchText == 'branch' || searchText == 'repository' || searchText == 'distributed' || searchText == 'version' || searchText == 'git' || searchText == 'control' || searchText == 'push' || searchText == 'pull' ) {
+        filesList.push("version-control");
+      }
+      
+
+
     location.href = "search-results.html?"+searchText+"?"+filesList;
     console.log("while sending");
     console.log(filesList);
@@ -78,10 +100,10 @@ function titleCase(str) {
    for (var i = 0; i < splitStr.length; i++) {
        // You do not need to check if i is larger than splitStr length, as your for does that for you
        // Assign it back to the array
-       splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);     
+       splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);
    }
    // Directly return the joined string
-   return splitStr.join(' '); 
+   return splitStr.join(' ');
 }
 
 !(function($) {
