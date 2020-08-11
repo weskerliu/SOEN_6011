@@ -21,10 +21,6 @@ function runScript(e) {
 }
 
 
-
-
-
-
 function addToFileList()
 {
 	var searchString = window.location.search.substring(1);
@@ -33,13 +29,18 @@ function addToFileList()
 	var files = splitParts[1].split(",");
 
 
-for(var i =0 ;i< files.length; i++){
-	  document.getElementById("searchResultDiv").children[0].innerHTML += "<li><a href="+files[i]+">"+files[i]+"</a></li>";
+	for(var i =0 ;i< files.length; i++){
+		var fileName = files[i]+".html";
+		var articleName = files[i].replace("-"," ");
+		var titleCaseName = titleCase(articleName);
+	  	
+	document.getElementById("searchResultDiv").children[0].innerHTML += "<li><a href="+fileName+">"+titleCaseName+"</a></li>";
+	}
+
+	document.getElementById('searchKeyword').innerHTML = searchKeyword;
+
 }
 
-document.getElementById('searchKeyword').innerHTML = searchKeyword;
-
-}
 function search(){
     var searchText = document.getElementById("searchText").value;
     console.log(searchText);
@@ -49,9 +50,14 @@ function search(){
     }
     else{
     	if(searchText == 'lead' || searchText == 'leadership' || searchText == 'manage' || searchText == 'motivate' || searchText == 'employee'){
-        filesList.push("leadership.html");
-        filesList.push("cost-management.html");
-
+        filesList.push("leadership");
+        filesList.push("cost-management");
+        filesList.push("version-control");
+        filesList.push("data-modelling");
+        filesList.push("debugging");
+        filesList.push("requirement-analysis");
+        filesList.push("reverse-engineering");
+        filesList.push("unit-testing");
       }
       if(searchText == 'requirement'){
         filesList.push("requirement-analysis.html");
@@ -66,7 +72,16 @@ function search(){
 
 }
 
-
+function titleCase(str) {
+   var splitStr = str.toLowerCase().split(' ');
+   for (var i = 0; i < splitStr.length; i++) {
+       // You do not need to check if i is larger than splitStr length, as your for does that for you
+       // Assign it back to the array
+       splitStr[i] = splitStr[i].charAt(0).toUpperCase() + splitStr[i].substring(1);     
+   }
+   // Directly return the joined string
+   return splitStr.join(' '); 
+}
 
 !(function($) {
   "use strict";
