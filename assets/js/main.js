@@ -71,7 +71,7 @@ function search(){
 
       }
       else if(searchText == 'data' || searchText == 'database' || searchText == 'modelling' || searchText == 'value' || searchText == 'relational' || searchText == 'query' || searchText == 'sql' ){
-        filesList.push("cost-management");
+        filesList.push("data-modelling");
 
       }
       else if(searchText == 'debug' || searchText == 'API' || searchText == 'code' || searchText == 'test' || searchText == 'testing' || searchText == 'loc' ) {
